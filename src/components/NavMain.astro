@@ -1,4 +1,7 @@
-<nav class="bg-slate-900 w-full h-24 flex justify-around items-center sticky top-0 z-10 backdrop-blur-md dark:bg-transparent page-scrolling " transition:animate="none">
+---
+import Button from "./Button.astro";
+---
+<nav class="bg-[#1c1c1c] w-full h-24 flex justify-around items-center sticky top-0 z-10 backdrop-blur-md dark:bg-transparent page-scrolling " transition:animate="none">
     <section class="text-white">
         Andev Soft
     </section>
@@ -22,12 +25,8 @@
         </ul>
     </section>
     <section>
-        <button class="px-9 py-2 rounded-3xl mx-3 border-2 border-[#33fcb9] text-white">
-            Log In
-        </button>
-        <button class="px-9 py-3 rounded-3xl bg-[#33fcb9] mx-3">
-            Sign Up
-        </button>
+        <Button text="Get Started" />
+        
     </section>
 </nav>
 
