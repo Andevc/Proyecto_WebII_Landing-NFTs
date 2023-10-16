@@ -1,38 +1,13 @@
 .swiper {
   width: 100% ;
-  
   margin: 5px;
-  padding: 20px 0 !important;
-  position: relative;
 }
-
-.swiper::after, .swiper::before{
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 120px;
-  z-index: 10;
-  
-  
-}
-.swiper::before{
-  background: linear-gradient(to left,transparent, #00000099);
-  left: 0;
-  top: 30px;
-}
-.swiper::after{
-  background: linear-gradient(to right,transparent, #000000ff);
-  right: 0;
-  top: 0;
-}
-
 .swiper-slide {
-  background-position: center;
-  
+  background-position: center; 
   background-size: cover;
   background: transparent;
-  width: 350px !important; 
-  height: 450px !important;
+  width: 300px !important; 
+  height: 500px !important;
   
 }
 
