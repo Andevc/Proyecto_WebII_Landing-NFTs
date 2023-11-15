@@ -1,114 +1,141 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import NavMain from '../components/NavMain.astro';
 import Footer from '../components/Footer.astro';
 import ImageSlide from '../components/reactComponents/ImageSlide';
 import Button from '../components/Button.astro';
-
+import TopCreators from '../components/TopCreators.astro';
 ---
 
 <Layout title="Welcome to NFTs">
-	
-	
+	<NavMain/>
 	<main >
-		<NavMain/>	
+	
+		
 		<section class="container-main">
-			
-			
 			<section class="container-main-content font-['Akira']">
-				<h1>Welcome to Secure <span class="text-gradient">NFTs</span> Innovation</h1>
-				<p class="font-['Aquire']">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero at quia qui placeat quas aut iste perspiciatis suscipit expedita aperiam.
-				</p><br><br>
-				<Button text='Get Started'/>
+				<section class="main-content-text">
+					<h1>Libera tu creatividad con los <span>NFTs.</span></h1>
+					<p>
+						Su puerta de entrada a la elaboración, exhibición y 
+						comercialización NFT únicos con confianza.
+					</p>
+				</section>
+				<section class="main-content-features">
+
+				</section>
+				
+			</section>
+		</section>
+
+		<section class="container-benefits">
+			<section class="benefit-container ">
+				<section class="benefit-content">
+					<h1>Crea tus <span>NFTs</span> sin <span>problemas.</span></h1>
+					<p>
+						Transforme su arte en tesoros digitales sin 
+						esfuerzo en nuestro plataforma. Abrace el futuro de 
+						las NFT con una creación fácil de usar Herramientas 
+						diseñadas para cada creador.
+					</p>
+				</section>
+				<section class="benefits-buttons">
+					<section class="btn-cont">
+						<Button text='Get Started'/>
+					</section>
+					<section class="btn-cont">
+						<Button text='Get Started'/>
+					</section>
+				</section>
+			</section>
+			<section class="benefit-container-image">
+				<img src="../../public/trending/trending_00.jpg" alt="image-card">
+			</section>
+		</section>
+
+		<section class="container-benefits">
+			<section class="benefit-container ">
+				<section class="benefit-content">
+					<h1>Expande tu collecion con <span>Facilidad</span></h1>
+					<p >
+						¿Ya tienes NFTs? Dales vida en nuestra plataforma sin 
+						esfuerzo cargar y mostrar sus joyas digitales existentes. 
+						Su colección, a tu manera.
+					</p>
+				</section>
+				<section class="benefits-buttons">
+					<section class="btn-cont">
+						<Button text='Get Started'/>
+					</section>
+					<section class="btn-cont">
+						<Button text='Get Started'/>
+					</section>
+				</section>
+			</section>
+			<section class="benefit-container-image">
+				<img src="../../public/trending/trending_01.jpg" alt="image-card">
 			</section>
 		</section>
 
 		<section class="slide">
-			<section class="slide-image font-['Aquire']">
-				<h1>Trending <span class="text-gradient">Top</span></h1>
+			<section class="slide-image font-['Akira']">
+				<h1>Trending <span>Top</span></h1>
 				<ImageSlide client:visible />
 			</section>
 		</section>
-		<section class="w-full h-auto flex xl:flex-row justify-between items-center sm:flex-col">
-			<section class="xl:w-1/2 sm:w-full">
-				<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero at quia qui placeat quas aut iste perspiciatis suscipit expedita aperiam.
-				</p>
-			</section>
-			<section class="xl:w-1/2">
-				<ul role="list" class="link-card-grid">
-					<Card
-						src="../../public/img4.jpg"
-					/>
-				</ul>
-			</section>
-		</section>
+
+		<section class="container-creators"> <TopCreators/> </section>
 	</main>
 	
 	<Footer/>
 </Layout>
 
 <style>
-	
-	p{
+	main{
+		width: 100%;
+	}
+	h1 {
+		font-family: 'Akira', sans-serif;
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: left;
+		margin-bottom: .5em;
+		letter-spacing: 3px;
+		text-wrap: wrap;
+		filter: drop-shadow(0 0 10px black);
 		color: white;
 	}
-	.slide{
-		height: 700px;
-		
-		background-size: 80px;
-		
-		position: relative;
+	span {
+		background: linear-gradient(45deg, #ff004c 0%, #f0ff21 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100%;
+		background-position: 0%;	
 	}
-	.slide::after{
-		right: 0;		
-		background: linear-gradient(to right,transparent, #000000);
+	p{
+		color: white;
+		font-size: 1.5em;
+		font-family: 'OliviarSansLg', sans-serif;
 	}
-	.slide::before{
-		left: 0;
-		background: linear-gradient(to left,transparent, #000000);
-	}
-	.slide::after, .slide::before{
-		content: "";
-		position: absolute;
-		height: 100%;
-		width: 40%;
-		z-index: 2;
-		top: 0;
-	}
-	.slide-image{
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		filter: drop-shadow(0 10px 20px black);
-	}
+	/* Container Main */
 	.container-main{
-		background: url('../../public/background-Main.png');
+		background: url('../../public/background/bg-Main.png');
 		background-position: center;
 		background-size: cover;
-
 		width: 100%;
-		height: 650px;
-		
+		height: 700px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start; 
-		
 		position: relative;
-		
 	}
 	.container-main::before{
 		content: "";
 		position: absolute;
 		height: 100%;
-		width: 90%;
+		width: 60%;
 		z-index: 1;
 		top: 0;
 		left: 0;
@@ -122,11 +149,8 @@ import Button from '../components/Button.astro';
 		z-index: 1;
 		bottom: 0;
 		background: linear-gradient(to bottom,transparent, #000000);
-
 	}
-	
 	.container-main-content{
-		
 		z-index: 100;
 		width: 50%;
 		height: 90%;
@@ -136,36 +160,102 @@ import Button from '../components/Button.astro';
 		align-items: flex-start;
 		margin: 10px 100px;
 	}
-	
-
-
-	
-
-
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: left;
-		margin-bottom: .5em;
-		letter-spacing: 3px;
-		text-wrap: balance;
-		filter: drop-shadow(0 0 10px black);
-		color: white;
-	}
-	.text-gradient {
-		background: linear-gradient(45deg, #ff004c 0%, #f0ff21 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100%;
-		background-position: 0%;
-		
-	}
-	.link-card-grid{
+	/* Container Benefits */
+	.container-benefits{
 		width: 100%;
-		overflow: hidden;
-
+		height: 650px;
+		padding: 4em 6em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		z-index: 1000;
+	}
+	.container-benefits:nth-child(odd){
+		flex-direction: row;
+	}
+	.container-benefits:nth-child(even){
+		flex-direction: row-reverse;	
+	}
+	.container-benefits::before{
+		content: "";
+		width: 100%;
+		height: 30%;
+		position: absolute;
+		left: 0;	
+	}
+	.container-benefits:nth-child(even)::before{
+		top: 0;
+		background: linear-gradient(to top,transparent, #000000);
+	}
+	/* Continaer Benefit */
+	.benefit-container{
+		height: 85%;
+		width: 65%;		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.benefit-container-image{
+		z-index: 1000;
+		width: 30%;
+		height: 100%;
+		box-shadow: 0 0 20px black;
+		border-radius: 2em;
 	}
 
+	.benefit-container-image img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 2em;	
+	}
+	/* Images Slide */
+	.slide{
+		margin: 0 auto;
+		height: 700px;
+		width: 100%;
+	}
+	.slide-image{
+		margin: 0 auto;
+		width: 81%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		filter: drop-shadow(0 10px 20px black);
+	}
 
+	/*  */
+	.container-creators{
+		width: 98%;
+		height: 650px;	
+		padding: 4em 5em;
+		margin: 0 auto;
+		position: relative;
+	}
+	.benefit-content{
+		height: 80%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.benefits-buttons{
+		
+		width: 100%;
+		height: 20%;
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.btn-cont{
+		margin-right: 5em;
+	}
 </style>

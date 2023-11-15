@@ -5,7 +5,8 @@ module.exports = {
 	theme: {
 		extend: {
 			Akira: "'Akira'",
-			Aquire: "'Aquire'"
+			OliviarSansLg: "'OliviarSans-Light'",
+			OliviarSansRg: "'OliviarSans-Regular'"	
 		},
 	},
 	plugins: [],

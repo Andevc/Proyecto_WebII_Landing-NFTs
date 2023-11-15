@@ -1,0 +1,208 @@
+---
+import CreatorInfo from "./CreatorInfo.astro";
+---
+
+<section class="container-creators">
+    <h1>Top <span>Creators</span></h1>
+    <section class="lista">
+        <section class="table-col">
+            
+            <ul class="table-tittle">
+                <li class="Rank" ></li>
+                <li class="Creator" >Creator Tag</li>
+                <li class="Total-Earn" >Total Earn</li>
+                <li class="NFTs-Sold" >NFTs Sold</li>
+            </ul>
+            <section class="ranking">
+                <CreatorInfo
+                    Rank="1"
+                    Avatar="../../public/avatar_profile/avatar_profile_01.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                />
+                <CreatorInfo
+                    Rank="2"
+                    Avatar="../../public/avatar_profile/avatar_profile_02.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                />
+                <CreatorInfo
+                    Rank="3"
+                    Avatar="../../public/avatar_profile/avatar_profile_03.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                />
+                <CreatorInfo
+                    Rank="4"
+                    Avatar="../../public/avatar_profile/avatar_profile_04.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                />
+                <CreatorInfo
+                    Rank="5"
+                    Avatar="../../public/avatar_profile/avatar_profile_05.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                />
+            </section>
+        </section>
+        
+        <section class="table-col">
+            <ul class="table-tittle">
+                <li class="Rank" ></li>
+                <li class="Creator" >Creator Tag</li>
+                <li class="Total-Earn" >Total Earn</li>
+                <li class="NFTs-Sold" >NFTs Sold</li>
+            </ul>
+            <section class="ranking">
+                <CreatorInfo
+                    Rank="6"
+                    Avatar="../../public/avatar_profile/avatar_profile_06.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                />
+                <CreatorInfo
+                    Rank="7"
+                    Avatar="../../public/avatar_profile/avatar_profile_07.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                />
+                <CreatorInfo
+                    Rank="8"
+                    Avatar="../../public/avatar_profile/avatar_profile_08.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                />
+                <CreatorInfo
+                    Rank="9"
+                    Avatar="../../public/avatar_profile/avatar_profile_09.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                />
+                <CreatorInfo
+                    Rank="10"
+                    Avatar="../../public/avatar_profile/avatar_profile_10.png"
+                    CreatorName="User001"
+                    TotalEarn="1350"
+                    NFTsSold="250"
+                    
+                />
+            </section>
+        </section>
+    </section>
+    
+</section>
+
+
+
+<style>
+
+h1 {
+		font-size: 3em;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		letter-spacing: 3px;
+		text-wrap: balance;
+		filter: drop-shadow(0 0 10px black);
+		color: white;
+
+        height: 10%;
+	}
+	span {
+		background: linear-gradient(45deg, #ff004c 0%, #f0ff21 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100%;
+		background-position: 0%;
+		
+	}
+
+    .container-creators{
+        
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        backdrop-filter: blur(.4em);
+        border-radius: 2em;
+        padding: 2em;
+        position: relative;
+        box-shadow: -1px -1px 1.6em #ff004c,2px 2px 1.6em #f0ff21;
+    }
+
+
+    
+    .lista{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .table-col{
+        width: 50%;
+        
+        padding: 0 1.5em .5em .5em;
+        overflow: hidden;
+        
+    }
+    .table-col ul{
+        width: 100%;
+    }
+
+
+    .table-tittle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 0;
+        border-bottom: 3px solid white;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 1.5em;
+    }
+
+    .table-tittle li{
+        
+        height: 3em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+
+    }
+
+    .Rank{
+        width: 10%;
+    }
+    .Creator{
+        width: 40%;
+    }
+    .Total-Earn{
+        width: 30%;
+    }
+    .NFTs-Sold{
+        width: 20%;
+    }
+    .ranking{
+        
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .ranking:hover{
+        cursor: pointer;
+    }
+
+</style>

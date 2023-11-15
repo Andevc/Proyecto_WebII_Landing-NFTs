@@ -1,0 +1,111 @@
+---
+interface Props {
+	Rank?: string;
+    Avatar?: string;
+    CreatorName?: string;
+    TotalEarn?: string;
+    NFTsSold?: string;
+}
+const { Rank,Avatar, CreatorName, TotalEarn, NFTsSold} = Astro.props;
+const colors = ['#73ff00','#e2e2e2','#1900ff','#dc143c']
+const BgAvatar = colors[Math.floor(Math.random()*(colors.length))]
+---
+<ul class="creator-info">
+    <li class="Rank">
+        {Rank}
+    </li>
+    <li class="Creator">
+        <section class="avatar">
+            <img src={Avatar} alt="avatar-creator">
+        </section>
+        
+        {CreatorName}
+    </li>
+
+    <li class="Total-Earn">
+        
+        {TotalEarn} ETH
+        <svg 
+            id="Layer_1" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 133.7 220.5" 
+            
+        >
+            <path 
+                class="st0" 
+                d="M2.4 98.8l65-27.4 63 28.1L67.3 0zm.2 30.4l64.9 37.6 66.2-37.6-65.6 91.3z"
+            />
+            <path d="M67.7 84.8L0 113.3l67.7 37.6 65.8-36.8z"/>
+        </svg>
+    </li>
+    
+    <li class="NFTs-Sold">
+        {NFTsSold} NFTs
+    </li>
+</ul>
+
+<style define:vars={{ BgAvatar }}>
+    :root{
+        --color-eth: #02AAE5;
+    }
+    .creator-info{
+        width: 100%;
+        height: 4em;
+        overflow: hidden;
+        display: flex;
+    }
+    li{
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        
+    }
+    .Rank{
+        width: 10%;
+        display: grid;
+        place-content: center;
+    }
+    .Creator{   
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;        
+    }
+    .avatar{
+        width: 3em;
+        height: 3em;
+        margin: 0 10px;
+        background: linear-gradient(to right bottom, #02AAE5 30%, var(--BgAvatar)) ;
+        border-radius: 1em;
+        overflow: hidden;
+    }
+    .avatar img{
+        filter: drop-shadow(2px 2px 2px black);
+    }
+    .Total-Earn{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        color: var(--color-eth);
+    }
+    .Total-Earn svg{
+        width: 2em;
+        height: 1.1em;
+        fill: var(--color-eth);
+
+    }
+    .NFTs-Sold{
+        
+        width: 20%;
+        display: grid;
+        place-content: center;
+    }
+
+    ul:hover{
+        background: #ffffff11;
+        border-radius: 1em;
+    }
+</style>

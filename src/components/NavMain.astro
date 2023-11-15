@@ -8,25 +8,35 @@ import Button from "./Button.astro";
     <section class="w-1/2 h-10 flex justify-center items-center  ">
         <ul class="w-full   flex justify-evenly items-center text-white">
             <li>
-                <a class="px-5 py-2 tracking-[.2em] hover:border-b-2 hover:text-[#ff004c] hover:border-b-[#ff004c]" href="/">
+                <a href="/">
                     Home
                 </a>
             </li>
             <li>
-                <a class="px-5 py-2 tracking-[.2em] hover:border-b-2 hover:text-[#ff004c] hover:border-b-[#ff004c]" href="/explore">
-                    Explore
-                </a>
-            </li>
-            <li>
-                <a class="px-5 py-2 tracking-[.2em] hover:border-b-2 hover:text-[#ff004c] hover:border-b-[#ff004c]" href="/market">
+                <a href="/marketMain">
                     Market
                 </a>
             </li>
+            <li>
+                <a href="/discoverMain">
+                    Dicover
+                </a>
+            </li>
+            <li>
+                <a href="/resourceMain">
+                    Resoures
+                </a>
+            </li>
+            <li>
+                <a href="/walletMain">
+                    Wallet
+                </a>
+            </li>
+            
         </ul>
     </section>
     <section>
         <Button text="Get Started" />
-        
     </section>
 </nav>
 
@@ -34,4 +44,16 @@ import Button from "./Button.astro";
     .page-scrolling{
         -webkit-mask-image: linear-gradient(0deg, transparent 0%, rgb(0,0,0) 1rem);
     }
+
+    a{
+        padding: 2px 5px;
+        letter-spacing: .2em;
+    }
+
+    a:hover{
+        border-bottom: 2px ;
+        color: #ff004c;
+        border-bottom-color: #ff004c;
+    }
+
 </style>
