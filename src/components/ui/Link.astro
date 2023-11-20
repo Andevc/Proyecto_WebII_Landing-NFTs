@@ -1,0 +1,77 @@
+---
+interface Props{
+    href: string;
+    size?: "md" | "lg";
+    block?: boolean,
+    class?: string;
+    [x: string]: any  
+}
+
+const {
+  href,
+  block,
+  size = "lg",
+  style = "primary",
+  class: className,
+  ...rest
+} = Astro.props;
+
+const sizes = {
+  lg: "px-5 py-2.5",
+  md: "px-4 py-2",
+};
+
+const styles = {
+  outline: "link-outline",
+  primary: "link-primary",
+};
+---
+
+<a 
+    href={href}
+    {...rest}
+    class:list={[
+        "link",
+        block && "w-full",
+        sizes[size],
+        styles[style],
+        className,
+    ]}
+>
+        <slot/>
+</a>
+
+<style>
+  .link{
+      border-radius: 2em;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      color: white;
+      transition: all .5s;
+      position: relative;
+      z-index: 1;
+  }
+  .link-primary::before, .link-outline::before{
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: -10px;
+      bottom: -10px;
+      right: -10px;
+      border-radius: 2em;
+      z-index: -1; 
+      filter: blur(1em);
+      transition: .5s;
+  }  
+  .link-primary, .link-primary:hover::before{
+      
+      background: linear-gradient(45deg, #ff004c, #3b82f6);
+      
+
+  }
+  .link-outline, .link-outline:hover::before{
+      background: #ff004c;
+  }
+</style>

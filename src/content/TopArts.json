@@ -1,0 +1,85 @@
+[
+    {
+        "imgArt" : "../../public/trending/trending_00.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_01.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_02.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_03.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_04.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },    {
+        "imgArt" : "../../public/trending/trending_05.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_06.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_07.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_08.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_09.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },    {
+        "imgArt" : "../../public/trending/trending_10.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_11.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_12.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    },
+    {
+        "imgArt" : "../../public/trending/trending_13.jpg",
+        "avtar": "../../public/avatar_profile/avatar_profile_01.png",
+        "autor": "User 001",
+        "price": "1350"
+    }
+
+]

@@ -1,0 +1,82 @@
+---
+import Layout from "@layouts/Layout.astro";
+import PricingCard from "@components/cards/PricingCard.astro"
+
+
+const pricing = [
+    {
+        name: "Starter",
+        price: "Free",
+        popular: false,
+        info: "Perfect for beginners",
+        features: [
+            "Lifetime free",
+            "Up to 3 users",
+            "Unlimited Pages",
+            "Astro Sub Domain",
+            "Basic Integrations",
+            "Community Support",
+        ],
+        button: {
+            text: "Get Started",
+            link: "/",
+        },
+        
+    },
+    {
+        name: "Business",
+        price: {
+            monthly: "49",
+            annual: "16",
+            discount: "10%",
+            original: "24",
+        },
+        popular: true,
+        info: "For serious businesses",
+        features: [
+            "All Free Features",
+            "Up to 20 users",
+            "20 Custom Domains",
+            "Unlimited Collaborators",
+            "Advanced Integrations",
+            "Priority Support",
+        ],
+        button: {
+            text: "Get Started",
+            link: "/",
+        },
+        
+    },
+    {
+        name: "Enterprice",
+        price: "Custom",
+        popular: false,
+        info: "Suitable for Enterprise solutions",
+        features: [
+            "All Pro Features",
+            "Unlimited Custom Domains",
+            "99.99% Uptime SLA",
+            "SAML & SSO Integration",
+            "Dedicated Account Manager",
+            "24/7 Phone Support",
+        ],
+        button: {
+            text: "Contact us",
+            link: "/contact",
+        },
+        
+    },
+];
+---
+<Layout title="Pricing">
+    <section class=" h-full mb-36 pt-28">
+        <section class="text-center mt-26 ">
+            <h1 class="text-center text-gradient">Pricing</h1>
+            <p class="text-white text-3xl">Simple & Predictable pricing. No surprices.</p>
+        </section>
+        <section class="grid md:grid-cols-3 gap-16 m-[200px] max-w-screen-lg mt-28">
+            {pricing.map((item) => <PricingCard plan={item}/>)}
+        </section>
+    </section>
+</Layout>
+

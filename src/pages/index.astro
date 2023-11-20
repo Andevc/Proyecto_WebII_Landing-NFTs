@@ -1,21 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import NavMain from '../components/NavMain.astro';
-import Footer from '../components/Footer.astro';
-import ImageSlide from '../components/reactComponents/ImageSlide';
-import Button from '../components/Button.astro';
-import TopCreators from '../components/TopCreators.astro';
+import Layout from '@layouts/Layout.astro';
+import ImageSlide from '@components/react/ImageSlide'
+import Button from '../components/ui/Button.astro';
+import TopCreators from '../components/nose/TopCreators.astro';
 ---
 
-<Layout title="Welcome to NFTs">
-	<NavMain/>
-	<main >
-	
-		
+<Layout title="Welcome to Crypto Art">
+	<main>
 		<section class="container-main">
 			<section class="container-main-content font-['Akira']">
 				<section class="main-content-text">
-					<h1>Libera tu creatividad con los <span>NFTs.</span></h1>
+					<h1>Libera tu creatividad con el <span class="text-gradient">Arte Criptografico.</span></h1>
 					<p>
 						Su puerta de entrada a la elaboración, exhibición y 
 						comercialización NFT únicos con confianza.
@@ -24,14 +19,13 @@ import TopCreators from '../components/TopCreators.astro';
 				<section class="main-content-features">
 
 				</section>
-				
 			</section>
 		</section>
 
 		<section class="container-benefits">
 			<section class="benefit-container ">
 				<section class="benefit-content">
-					<h1>Crea tus <span>NFTs</span> sin <span>problemas.</span></h1>
+					<h1>Crea tus <span class="text-gradient">NFTs</span> sin <span class="text-gradient">problemas.</span></h1>
 					<p>
 						Transforme su arte en tesoros digitales sin 
 						esfuerzo en nuestro plataforma. Abrace el futuro de 
@@ -56,7 +50,7 @@ import TopCreators from '../components/TopCreators.astro';
 		<section class="container-benefits">
 			<section class="benefit-container ">
 				<section class="benefit-content">
-					<h1>Expande tu collecion con <span>Facilidad</span></h1>
+					<h1>Expande tu collecion con <span class="text-gradient">Facilidad</span></h1>
 					<p >
 						¿Ya tienes NFTs? Dales vida en nuestra plataforma sin 
 						esfuerzo cargar y mostrar sus joyas digitales existentes. 
@@ -77,22 +71,16 @@ import TopCreators from '../components/TopCreators.astro';
 			</section>
 		</section>
 
-		<section class="slide">
-			<section class="slide-image font-['Akira']">
-				<h1>Trending <span>Top</span></h1>
-				<ImageSlide client:visible />
-			</section>
-		</section>
+		
 
-		<section class="container-creators"> <TopCreators/> </section>
+		
 	</main>
-	
-	<Footer/>
 </Layout>
 
 <style>
 	main{
 		width: 100%;
+		padding: none;
 	}
 	h1 {
 		font-family: 'Akira', sans-serif;
@@ -106,13 +94,6 @@ import TopCreators from '../components/TopCreators.astro';
 		filter: drop-shadow(0 0 10px black);
 		color: white;
 	}
-	span {
-		background: linear-gradient(45deg, #ff004c 0%, #f0ff21 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100%;
-		background-position: 0%;	
-	}
 	p{
 		color: white;
 		font-size: 1.5em;
@@ -120,7 +101,7 @@ import TopCreators from '../components/TopCreators.astro';
 	}
 	/* Container Main */
 	.container-main{
-		background: url('../../public/background/bg-Main.png');
+		background: url('../assets/images/Background/bg-Main.webp');
 		background-position: center;
 		background-size: cover;
 		width: 100%;
@@ -212,31 +193,6 @@ import TopCreators from '../components/TopCreators.astro';
 		object-position: center;
 		border-radius: 2em;	
 	}
-	/* Images Slide */
-	.slide{
-		margin: 0 auto;
-		height: 700px;
-		width: 100%;
-	}
-	.slide-image{
-		margin: 0 auto;
-		width: 81%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		filter: drop-shadow(0 10px 20px black);
-	}
-
-	/*  */
-	.container-creators{
-		width: 98%;
-		height: 650px;	
-		padding: 4em 5em;
-		margin: 0 auto;
-		position: relative;
-	}
 	.benefit-content{
 		height: 80%;
 		width: 100%;
@@ -259,3 +215,4 @@ import TopCreators from '../components/TopCreators.astro';
 		margin-right: 5em;
 	}
 </style>
+@components/react/ImageSlide

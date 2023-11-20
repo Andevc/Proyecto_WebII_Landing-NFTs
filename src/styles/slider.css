@@ -1,13 +1,4 @@
-.swiper {
-  width: 100% ;
-  margin: 5px;
-}
-.swiper-slide {
-  background: transparent;
-  width: 300px !important; 
-  height: 500px !important;
-  position: relative;
-}
+
 .swiper-slide img { 
   display: block;
   width: 100%;
@@ -18,13 +9,12 @@
   filter: drop-shadow(0 5px 10px black);
   position: relative;
 }
-.swiper-slide-prev,.swiper-slide-next{
-  filter: blur(2px);
-}
-.swiper-slide-active{
-  filter: blur(0);
-}
 
+
+.slide-card-nft{
+  width: 300px ; 
+  height: 500px;
+}
 
 .creator-nft{
   

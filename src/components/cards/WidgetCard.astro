@@ -5,11 +5,8 @@ interface Props {
     avatar: string;
     price: string;
 }
-
 const { src, name, avatar, price} = Astro.props;
-
 ---
-
 <section class="widget-card">
     <section class="widget-card-tittle">
         <img class="avatar" src={avatar} alt="avatar">

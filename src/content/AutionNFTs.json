@@ -1,0 +1,46 @@
+[
+    {
+        "img": "../../../public/trending/trending_01.jpg",
+        "tittle": "Live Arts",
+        "autor": "Jimmy Wright",
+        "profile": "../../assets/images/Trending/trending_08.jpg",
+        "userNane": "jimmywright",
+        "priceNFt": "3.14",
+        "priceUSD": "1079,69",
+        "auction": "25",
+        "date": "November 22, 2023"
+    },
+    {
+        "img": "../../../public/trending/trending_07.jpg",
+        "tittle": "Glass Cube",
+        "autor": "Lori Hart",
+        "profile": "../../assets/images/Trending/trending_0.jpg",
+        "userNane": "lorihart",
+        "priceNFt": "2.25",
+        "priceUSD": "7734,33",
+        "auction": "15",
+        "date": "November 30, 2023"
+    },
+    {
+        "img": "../../../public/trending/trending_03.jpg",
+        "tittle": "Red Ocean",
+        "autor": "Monica Lucas",
+        "profile": "../../assets/images/Trending/trending_06.jpg",
+        "userNane": "@lucaa",
+        "priceNFt": "2.54",
+        "priceUSD": "8935,37",
+        "auction": "30",
+        "date": "December 1, 2023"
+    },
+    {
+        "img": "../../../public/trending/trending_04.jpg",
+        "tittle": "Comming Arts",
+        "autor": "Andres Escb",
+        "profile": "../../assets/images/Trending/trending_04.jpg",
+        "userNane": "@Andev",
+        "priceNFt": "3.14",
+        "priceUSD": "2003,21",
+        "auction": "8",
+        "date": "November 29, 2023"
+    }
+]

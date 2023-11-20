@@ -1,9 +1,10 @@
 ---
 import CreatorInfo from "./CreatorInfo.astro";
+
 ---
 
 <section class="container-creators">
-    <h1>Top <span>Creators</span></h1>
+    <!-- <h1>Top <span class="text-gradient">Creators</span></h1> -->
     <section class="lista">
         <section class="table-col">
             
@@ -83,7 +84,7 @@ import CreatorInfo from "./CreatorInfo.astro";
                 />
                 <CreatorInfo
                     Rank="9"
-                    Avatar="../../public/avatar_profile/avatar_profile_09.png"
+                    Avatar="/src/assets/images/Avatars/avatar_profile_09.png"
                     CreatorName="User001"
                     TotalEarn="1350"
                     NFTsSold="250"
@@ -106,43 +107,32 @@ import CreatorInfo from "./CreatorInfo.astro";
 
 <style>
 
-h1 {
-		font-size: 3em;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		letter-spacing: 3px;
-		text-wrap: balance;
-		filter: drop-shadow(0 0 10px black);
-		color: white;
+    h1 {
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: 3px;
+        text-wrap: balance;
+        filter: drop-shadow(0 0 10px black);
+        color: white;
 
         height: 10%;
-	}
-	span {
-		background: linear-gradient(45deg, #ff004c 0%, #f0ff21 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100%;
-		background-position: 0%;
-		
-	}
+    }
+        
 
     .container-creators{
-        
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        backdrop-filter: blur(.4em);
+        background-color: #090909dd;
         border-radius: 2em;
         padding: 2em;
         position: relative;
-        box-shadow: -1px -1px 1.6em #ff004c,2px 2px 1.6em #f0ff21;
+        
     }
-
-
-    
     .lista{
-        height: 90%;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: row;

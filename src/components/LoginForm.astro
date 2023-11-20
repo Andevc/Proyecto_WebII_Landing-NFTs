@@ -1,0 +1,71 @@
+---
+
+---
+
+<form class="login-form space-content" method="post">
+  
+  <div class="login-form__controls">
+    <label for="email">Email</label>
+    <input type="email" name="email" required>
+  </div>
+  <div class="login-form__controls">
+    <label for="password">Password</label>
+    <input type="password" name="password" required>
+  </div>
+  <button class="button color-secondary behavior-full" type="submit">Login</button>
+  <label class="checkbox">
+    <input type="checkbox" name="remember">
+    <span>Remember me</span>
+  </label>
+  <a href="#">Forgot password?</a>
+</form> 
+
+<script>
+  // variables
+  const form = document.querySelector('.login-form')
+  const notification = form.querySelector('.notification')
+  const emailInput = form.querySelector('input[name="email"]')
+  const passwordInput = form.querySelector('input[name="password"]')
+  const submitButton = form.querySelector('button')
+
+  // execution
+  
+
+  submitButton.addEventListener('click', event => {
+    event.preventDefault()
+
+    if (emailInput.value === 'admin@astro.demo' && passwordInput.value === 'Astronaut570') {
+      localStorage.setItem('isLoggedIn', 'true')
+      window.location.href = '../userPages/'
+    } 
+  })
+</script>
+
+<style >
+  
+  
+    
+  .login-form  label {
+      display: block;
+      margin-bottom: $space-8;
+    }
+
+    .login-form input {
+      width: 100%;
+      @include radius-small;
+    }
+
+    .login-form input {
+      padding: $space-8;
+      border: 2px solid var(--neutral-600);
+    }
+
+    .login-form .checkbox {
+      display: flex;
+      align-items: center;
+      gap: $space-4;
+
+      
+    }
+  
+</style>
