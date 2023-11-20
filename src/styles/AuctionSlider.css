@@ -1,9 +1,16 @@
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-button-prev {
+    filter: drop-shadow(0 5px  black);
     --swiper-navigation-color: #ff004c;
     color: var(--swiper-navigation-color, var(--swiper-theme-color));
-    
-    
+}
+
+.swiper-button-prev:active, .swiper-button-next:active{
+    transform: translateY(2px);
+}
+.swiper-button-next{
+    filter: drop-shadow(0 5px  black);
+    --swiper-navigation-color: #3b82f6;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 .slider-section{
     width: 100%;
@@ -12,12 +19,13 @@
     
     
     padding: 2em .1em;
+    
 }
 
 .card{
-    box-shadow: 0 0 50px black;
+    box-shadow: 0 0 20px black;
     margin: 0 auto;
-    
+    background: #090909bb;
     height: 500px;
     width: 90%;
     display: grid;
@@ -33,7 +41,7 @@
     height: 100%;       
     overflow: hidden; 
     border-radius: 2em;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 20px black;
     
 }   
 
@@ -47,11 +55,13 @@
 }
 
 .card-content{
+    box-shadow: 0 0 20px black;
     height: 100%;
     display: grid;
     width: 100%;
-    border: 1px solid white;
-    
+    border-radius: 2em;
+    padding: 2em 1em;
+    background-color: #060606;
     place-items: center;
 }
 .card-content-button, .card-content-info{
