@@ -1,6 +1,6 @@
 [
     {
-        "imgArt" : "../../public/trending/trending_00.jpg",
+        "imgArt" : "./src/assets/images/trending/trending_00.jpg",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
