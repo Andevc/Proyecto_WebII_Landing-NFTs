@@ -1,6 +1,6 @@
 [
     {
-        "img": "../../../public/trending/trending_01.jpg",
+        "img": "https://media.discordapp.net/attachments/1176191216371634227/1176191719117705367/trending_06.jpg?ex=656df8e6&is=655b83e6&hm=f583da7150017c726225431102a573a102daad726dc8a37c7a80f172788c8dd2&=&width=266&height=400",
         "tittle": "Live Arts",
         "autor": "Jimmy Wright",
         "profile": "../../assets/images/Trending/trending_08.jpg",
@@ -11,7 +11,7 @@
         "date": "November 22, 2023"
     },
     {
-        "img": "../../../public/trending/trending_07.jpg",
+        "img": "https://media.discordapp.net/attachments/1176191216371634227/1176191715246350368/trending_13.jpg?ex=656df8e5&is=655b83e5&hm=d91d62012dab59195a5c539ae2d0fd899007cc93aa5a2921f35d98364354e8bc&=&width=300&height=400",
         "tittle": "Glass Cube",
         "autor": "Lori Hart",
         "profile": "../../assets/images/Trending/trending_0.jpg",
@@ -22,7 +22,7 @@
         "date": "November 30, 2023"
     },
     {
-        "img": "../../../public/trending/trending_03.jpg",
+        "img": "https://media.discordapp.net/attachments/1176191216371634227/1176191719675535430/trending_05.jpg?ex=656df8e6&is=655b83e6&hm=d06d8b4a1139e98654128a0a7b6d6336a2f323d7502bd9a4daba891a24b414a2&=&width=266&height=400",
         "tittle": "Red Ocean",
         "autor": "Monica Lucas",
         "profile": "../../assets/images/Trending/trending_06.jpg",
@@ -33,7 +33,7 @@
         "date": "December 1, 2023"
     },
     {
-        "img": "../../../public/trending/trending_04.jpg",
+        "img": "https://media.discordapp.net/attachments/1176191216371634227/1176191744568733757/trending_03.jpg?ex=656df8ec&is=655b83ec&hm=efc3ba434dd3207305eb4158b91639a3a3c67c253f1a01ab0fd54163a8146c5b&=&width=308&height=400",
         "tittle": "Comming Arts",
         "autor": "Andres Escb",
         "profile": "../../assets/images/Trending/trending_04.jpg",
