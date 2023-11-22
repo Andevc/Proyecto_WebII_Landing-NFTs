@@ -22,6 +22,37 @@
     
 }
 
+.card-content-info{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    
+}
+.card-content-info h1{
+    font-size: 3em;
+    text-align: left;
+    
+}
+
+.content-info-user{
+    width: 40%;
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-content-info img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+}
+
 /* src/assets/images/Trending/trending_00.jpg */
 
 .card{
@@ -36,6 +67,7 @@
     padding: 2em 2.5em;
     color: white;
     border-radius: 2em;
+    overflow: hidden;
     
 }
 .card-img{
@@ -62,12 +94,12 @@
     display: grid;
     width: 100%;
     border-radius: 2em;
-    padding: 2em 1em;
+    padding: 2em 4em;
     background-color: #060606;
     place-items: center;
 }
-.card-content-button, .card-content-info{
-    border: 1px solid salmon;
+.card-content-button{
+    
     padding: 2em 0;
 }
 

@@ -1,0 +1,46 @@
+[
+    {
+        "img": "/images/trend/trending04.png",
+        "tittle": "Live Arts",
+        "autor": "Jimmy Wright",
+        "profile": "/images/avatars/avatar_profile_02.png",
+        "userNane": "jimmywright",
+        "priceNFT": "3.14",
+        "priceUSD": "1079,69",
+        "auction": "25",
+        "date": "November 22, 2023"
+    },
+    {
+        "img": "/images/trend/trending05.png",
+        "tittle": "Glass Cube",
+        "autor": "Lori Hart",
+        "profile": "/images/avatars/avatar_profile_02.png",
+        "userNane": "lorihart",
+        "priceNFT": "2.25",
+        "priceUSD": "7734,33",
+        "auction": "15",
+        "date": "November 30, 2023"
+    },
+    {
+        "img": "/images/trend/trending13.png",
+        "tittle": "Red Ocean",
+        "autor": "Monica Lucas",
+        "profile": "/images/avatars/avatar_profile_02.png",
+        "userNane": "lucaa",
+        "priceNFT": "2.54",
+        "priceUSD": "8935,37",
+        "auction": "30",
+        "date": "December 1, 2023"
+    },
+    {
+        "img": "/images/trend/trending10.png",
+        "tittle": "Comming Arts",
+        "autor": "Andres Escb",
+        "profile": "/images/avatars/avatar_profile_02.png",
+        "userNane": "Andev",
+        "priceNFT": "3.14",
+        "priceUSD": "2003,21",
+        "auction": "8",
+        "date": "November 29, 2023"
+    }
+]

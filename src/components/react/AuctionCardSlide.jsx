@@ -7,7 +7,8 @@ import 'swiper/css/navigation';
 
 
 import '@styles/AuctionSlider.css'
-import auctionInfo from '../../content/AutionNFTs.json'
+
+import auctionInfo from '@lib/auctionArt.json'
 
 import moment from 'moment';
 
@@ -70,12 +71,19 @@ export default function AuctionCards(){
                                 <img src={item.img} alt="m" />
                             </section>
                             <section class="card-content">
+                                
                                 <section class="card-content-info">
                                     <h1>{item.tittle}</h1>
-                                    <img src={item.profile} alt="" />
-                                    <p>{item.autor}</p>
-                                    <p>@{item.userNane}</p>
+                                    <section className="content-info-user">
+                                        <img src={item.profile} alt="" />
+                                        <div>
+                                            <p>{item.autor}</p>
+                                            <p>@{item.userNane}</p>
+                                        </div>    
+                                    </section>
                                 </section>
+
+
                                 <section className="flex items-center justify-evenly w-full overflow-hidden">
                                     <section >
                                         <p className="text-gray-400">Current Bid</p>

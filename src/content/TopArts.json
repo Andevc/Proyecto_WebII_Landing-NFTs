@@ -1,82 +1,82 @@
 [
     {
-        "imgArt" : "./src/assets/images/trending/trending_00.jpg",
+        "imgArt" : "./../assets/images/nft/trending00.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_01.jpg",
+        "imgArt" : "./../assets/images/nft/trending01.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_02.jpg",
+        "imgArt" : "./../assets/images/nft/trending02.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_03.jpg",
+        "imgArt" : "./../assets/images/nft/trending03.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_04.jpg",
+        "imgArt" : "./../assets/images/nft/trending04.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },    {
-        "imgArt" : "../../public/trending/trending_05.jpg",
+        "imgArt" : "./../assets/images/nft/trending05.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_06.jpg",
+        "imgArt" : "./../assets/images/nft/trending06.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_07.jpg",
+        "imgArt" : "./../assets/images/nft/trending07.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_08.jpg",
+        "imgArt" : "./../assets/images/nft/trending08.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_09.jpg",
+        "imgArt" : "./../assets/images/nft/trending09.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },    {
-        "imgArt" : "../../public/trending/trending_10.jpg",
+        "imgArt" : "./../assets/images/nft/trending10.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_11.jpg",
+        "imgArt" : "./../assets/images/nft/trending11.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_12.jpg",
+        "imgArt" : "./../assets/images/nft/trending12.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt" : "../../public/trending/trending_13.jpg",
+        "imgArt" : "./../assets/images/nft/trending13.png",
         "avtar": "../../public/avatar_profile/avatar_profile_01.png",
         "autor": "User 001",
         "price": "1350"

@@ -2,6 +2,7 @@
 import { ViewTransitions, slide} from 'astro:transitions'; 
 import NavBar from '../components/NavMain.astro';
 import Footer from '../components/Footer.astro';
+import AkiraFont from '@assets/fonts/AkiraExpandedDemo.woff2';
 interface Props {
 	title: string;
 }
@@ -27,20 +28,20 @@ const { title } = Astro.props;
 		<Footer/>
 	</body>
 </html>
-<style is:global>
+<style is:global >
 	@font-face{
 		font-family: 'Akira' ;
-		src: url('../../public/fonts/AkiraExpandedDemo.woff2') format('woff2');
+		src: url('/fonts/AkiraExpandedDemo.woff2') format('woff2');
 		font-style: normal;
 	}
 	@font-face{
 		font-family: 'OliviarSansLg' ;
-		src: url('../../public/fonts/OliviarSans-Light.woff2') format('woff2');
+		src: url('/fonts/OliviarSans-Light.woff2') format('woff2');
 		font-style: normal;
 	}
 	@font-face{
 		font-family: 'OliviarSansRg' ;
-		src: url('../../public/fonts/OliviarSans-Regular.woff2') format('woff2');
+		src: url('/fonts/OliviarSans-Regular.woff2') format('woff2');
 		font-style: normal;
 	}
 	:root {

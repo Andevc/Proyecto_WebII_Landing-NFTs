@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow'; 
 import '@styles/slider.css';
 import {Autoplay, EffectCoverflow } from 'swiper/modules';
-import topArt from '../../content/TopArts.json'
+import topArt from '@lib/topArt.json'
 
 
 export default function App() {

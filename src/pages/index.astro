@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import ImageSlide from '@components/react/ImageSlide'
-import Button from '../components/ui/Button.astro';
-import TopCreators from '../components/nose/TopCreators.astro';
+import Button from '@components/ui/Button.astro';
+import { Image } from 'astro:assets';
+import image1 from '@assets/images/nft/trending00.png';
 ---
 
 <Layout title="Welcome to Crypto Art">
@@ -43,7 +43,7 @@ import TopCreators from '../components/nose/TopCreators.astro';
 				</section>
 			</section>
 			<section class="benefit-container-image">
-				<img src="src/assets/images/trending/trending00.jpg" alt="image-card">
+				<Image src={image1} alt='image 1'  />
 			</section>
 		</section>
 
