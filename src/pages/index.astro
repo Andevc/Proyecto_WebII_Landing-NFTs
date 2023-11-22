@@ -2,7 +2,8 @@
 import Layout from '@layouts/Layout.astro';
 import Button from '@components/ui/Button.astro';
 import { Image } from 'astro:assets';
-import image1 from '@assets/images/nft/trending00.png';
+import image1 from "/images/trend/trending06.png"
+import image2 from "/images/trend/trending04.png"
 ---
 
 <Layout title="Welcome to Crypto Art">
@@ -67,7 +68,7 @@ import image1 from '@assets/images/nft/trending00.png';
 				</section>
 			</section>
 			<section class="benefit-container-image">
-				<img src="../../public/trending/trending_01.jpg" alt="image-card">
+				<Image src={image2} alt="image-card" />
 			</section>
 		</section>
 
