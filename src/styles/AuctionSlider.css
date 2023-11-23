@@ -1,64 +1,31 @@
 .swiper-button-prev {
-    filter: drop-shadow(0 5px  black);
+    filter: drop-shadow(0 5px black);
     --swiper-navigation-color: #ff004c;
     color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 
-.swiper-button-prev:active, .swiper-button-next:active{
+.swiper-button-prev:active,
+.swiper-button-next:active {
     transform: translateY(2px);
 }
-.swiper-button-next{
-    filter: drop-shadow(0 5px  black);
+
+.swiper-button-next {
+    filter: drop-shadow(0 5px black);
     --swiper-navigation-color: #3b82f6;
     color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
-.slider-section{
-    width: 100%;
+
+.slider-section {
+    margin: 0 auto;
+    width: 95%;
     height: 100%;
-    border-radius: 2em;
-    
-    
-    padding: 2em .1em;
-    
+    padding: 2em 0;
 }
 
-.card-content-info{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    
-}
-.card-content-info h1{
-    font-size: 3em;
-    text-align: left;
-    
-}
-
-.content-info-user{
-    width: 40%;
-    
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.card-content-info img{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    border: 3px solid white;
-}
-
-/* src/assets/images/Trending/trending_00.jpg */
-
-.card{
+.slider-card {
     box-shadow: 0 0 20px black;
     margin: 0 auto;
-    background: #090909bb;
+    background: #090909cd;
     height: 500px;
     width: 90%;
     display: grid;
@@ -67,20 +34,15 @@
     padding: 2em 2.5em;
     color: white;
     border-radius: 2em;
-    overflow: hidden;
-    
 }
-.card-img{
-    
-    height: 100%;       
-    overflow: hidden; 
+
+.slider-card-img {
+    overflow: hidden;
     border-radius: 2em;
     box-shadow: 0 0 20px black;
-    
-}   
+}
 
-.card-img img{
-    
+.slider-card-img img {
     border-radius: 2em;
     height: 100%;
     width: 100%;
@@ -88,27 +50,78 @@
     object-position: top;
 }
 
-.card-content{
+.slider-card-content {
     box-shadow: 0 0 20px black;
     height: 100%;
-    display: grid;
     width: 100%;
     border-radius: 2em;
-    padding: 2em 4em;
+    padding: 2em 3em;
     background-color: #060606;
-    place-items: center;
-}
-.card-content-button{
-    
-    padding: 2em 0;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 2em;
+    overflow: hidden;
 }
 
-.card-content-button{
+.slider-card-content-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-info-price {
+    padding-right: 3em;
+    border-right: 2px solid white;
+}
+
+.content-info-auction {
+    padding-left: 2em;
+}
+
+.slider-card-content-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+
+.slider-card-content-header-user {
+    margin-top: 1em;
+    width: 50%;
     display: flex;
     align-items: center;
 }
 
-.card-content-button a{
-    border: 1px solid white;
-    padding: 1.5em 3em;
+.header-user-profile {
+    width: 60px;
+    height: 60px;
+    padding: .1em;
+    margin-right: 2em;
+    position: relative;
+}
+
+.header-user-profile img {
+    border: 3px solid white;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: steelblue;
+
+}
+
+.header-user-profile svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.slider-card-buttons {
+    border: 1px solid blueviolet;
 }

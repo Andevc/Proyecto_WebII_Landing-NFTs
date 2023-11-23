@@ -5,6 +5,7 @@ import 'swiper/css/effect-coverflow';
 import '@styles/slider.css';
 import {Autoplay, EffectCoverflow } from 'swiper/modules';
 import topArt from '@lib/topArt.json'
+import { flushSync } from 'react-dom';
 
 
 export default function App() {
@@ -13,17 +14,20 @@ export default function App() {
     const avatarBg = {background: `linear-gradient(to right bottom, #02AAE5 30%, ${colorRnd})`};
 
     return (
+        
         <Swiper
             effect={'coverflow'}
             grabCursor={false}
+            
             centeredSlides={true}
             slidesPerView={'4'}
             coverflowEffect={{
+                slideShadows: true,
                 rotate: 20,
                 stretch: 0,
                 depth: 100,
-                modifier: 1.5,
-                
+                modifier: 1,
+            
             }}
             autoplay = {{
                 delay:2000,
@@ -34,12 +38,12 @@ export default function App() {
             
         >
         {
-            topArt.map((item) => (
-                <SwiperSlide>
+            topArt.map((item, index) => (
+                <SwiperSlide key={index }>
                     <section className="slide-card-nft">
-                        <img src={item.imgArt} alt="" />
+                        <img src={item.image} alt="" />
                         <section className='creator-nft'>
-                            <img style={avatarBg} src={item.avtar} alt="creator" />
+                            <img style={avatarBg} src={item.avatar} alt="creator" />
                             <section>
                                 <p>@{item.autor}</p>
                                 <p className='creator-info-nft'>
@@ -66,5 +70,6 @@ export default function App() {
             ))
         }
         </Swiper>
+
     );
 }

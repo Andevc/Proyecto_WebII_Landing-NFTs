@@ -1,84 +1,84 @@
 [
     {
-        "imgArt": "/images/trend/trending00.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending00.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending01.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending01.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending02.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending02.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending03.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending03.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending04.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending04.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },    {
-        "imgArt": "/images/trend/trending05.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending05.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending06.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending06.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending07.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending07.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending08.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending08.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending09.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending09.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },    
     {
-        "imgArt": "/images/trend/trending10.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending10.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending11.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending11.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending12.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending12.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     },
     {
-        "imgArt": "/images/trend/trending13.png",
-        "avtar": "/images/avatars/avatar_profile_02.png",
+        "image": "/images/trend/trending13.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
         "price": "1350"
     }

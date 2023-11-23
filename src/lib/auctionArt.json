@@ -1,9 +1,10 @@
 [
     {
         "img": "/images/trend/trending04.png",
+        "imgTittle": "auction crypto art ",
         "tittle": "Live Arts",
         "autor": "Jimmy Wright",
-        "profile": "/images/avatars/avatar_profile_02.png",
+        "avatar": "/images/avatars/avatar_profile_02.png",
         "userNane": "jimmywright",
         "priceNFT": "3.14",
         "priceUSD": "1079,69",
@@ -12,9 +13,10 @@
     },
     {
         "img": "/images/trend/trending05.png",
+        "imgTittle": "auction crypto art ",
         "tittle": "Glass Cube",
         "autor": "Lori Hart",
-        "profile": "/images/avatars/avatar_profile_02.png",
+        "avatar": "/images/avatars/avatar_profile_04.png",
         "userNane": "lorihart",
         "priceNFT": "2.25",
         "priceUSD": "7734,33",
@@ -23,9 +25,10 @@
     },
     {
         "img": "/images/trend/trending13.png",
+        "imgTittle": "auction crypto art ",
         "tittle": "Red Ocean",
         "autor": "Monica Lucas",
-        "profile": "/images/avatars/avatar_profile_02.png",
+        "avatar": "/images/avatars/avatar_profile_05.png",
         "userNane": "lucaa",
         "priceNFT": "2.54",
         "priceUSD": "8935,37",
@@ -34,9 +37,10 @@
     },
     {
         "img": "/images/trend/trending10.png",
+        "imgTittle": "auction crypto art ",
         "tittle": "Comming Arts",
         "autor": "Andres Escb",
-        "profile": "/images/avatars/avatar_profile_02.png",
+        "avatar": "/images/avatars/avatar_profile_10.png",
         "userNane": "Andev",
         "priceNFT": "3.14",
         "priceUSD": "2003,21",

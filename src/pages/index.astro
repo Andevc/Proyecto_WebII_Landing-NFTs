@@ -1,9 +1,9 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import Button from '@components/ui/Button.astro';
-import { Image } from 'astro:assets';
-import image1 from "/public/images/trend/trending04.png"
-import image2 from "/public/images/trend/trending05.png"
+
+import video1 from "/public/video/vid2.mp4";
+import video2 from "/public/video/vid3.mp4";
 ---
 
 <Layout title="Welcome to Crypto Art">
@@ -44,7 +44,8 @@ import image2 from "/public/images/trend/trending05.png"
 				</section>
 			</section>
 			<section class="benefit-container-image">
-				<Image src={image1} alt='image 1'  />
+				
+				<video src={video1} loop autoplay muted></video>
 			</section>
 		</section>
 
@@ -68,7 +69,8 @@ import image2 from "/public/images/trend/trending05.png"
 				</section>
 			</section>
 			<section class="benefit-container-image">
-				<Image src={image2} alt="image-card" />
+				<video src={video2} loop autoplay muted></video>
+				
 			</section>
 		</section>
 
@@ -152,6 +154,7 @@ import image2 from "/public/images/trend/trending05.png"
 		align-items: center;
 		position: relative;
 		z-index: 1000;
+		
 	}
 	.container-benefits:nth-child(odd){
 		flex-direction: row;
@@ -187,11 +190,11 @@ import image2 from "/public/images/trend/trending05.png"
 		border-radius: 2em;
 	}
 
-	.benefit-container-image img{
+	.benefit-container-image video{
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: center;
+		object-position: top;
 		border-radius: 2em;	
 	}
 	.benefit-content{
