@@ -1,12 +1,16 @@
-<footer class="pt-8 px-8 text-white" transition:animate="none" >
+---
+import {Image} from 'astro:assets';
+import logo from '@assets/images/logo2.webp'
+---
+<footer class=" w-full pt-8 px-8 text-white" transition:animate="none" >
     <hr>
-    <section class="flex justify-between">
+    <section class="w-[90%] flex justify-between items-center my-[1em] mx-auto">
         <section class="w-[40%] flex  flex-col justify-center items-center">
-            <section>
-                Logo
+
+            <section class="logo-footer">
+                <Image src={logo} alt="logo" />
             </section>
-            
-            <section class="py-10 flex flex-row justify-evenly w-full">
+            <section class="flex flex-row justify-evenly w-full ">
                 <!-- Facebook -->
                 <a href="...">
                     <svg class="social-networks facebook" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -72,7 +76,7 @@
                 </a>
             </section>
         </section>
-        <section class="w-full h-[250px] flex flex-row justify-around">
+        <section class="w-full  flex flex-row justify-around items-start">
             <section>
                 <ul>
                     <li class="footer-tittle">
@@ -183,7 +187,13 @@
         stroke: url(#gradient);
 
     }
-    
+
+    .logo-footer{
+        
+        width: 150px;
+        height: 150px;
+    }
+
     .facebook:hover{
         stroke: url(#fb-gradient);
     }

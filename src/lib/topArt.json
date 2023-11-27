@@ -3,84 +3,105 @@
         "image": "/images/trend/trending00.png",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": false
+
     },
     {
         "image": "/images/trend/trending01.png",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": false
+
     },
     {
         "image": "/images/trend/trending02.png",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": false
+
     },
     {
-        "image": "/images/trend/trending03.png",
+        "image": "/video/vid1.mp4",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": true
+
     },
     {
-        "image": "/images/trend/trending04.png",
+        "image": "/video/vid3.mp4",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": true
+
     },    {
         "image": "/images/trend/trending05.png",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": false
+
     },
     {
-        "image": "/images/trend/trending06.png",
+        "image": "/video/vid2.mp4",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": true
+
     },
     {
         "image": "/images/trend/trending07.png",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": false
+
     },
     {
-        "image": "/images/trend/trending08.png",
+        "image": "/video/vid6.mp4",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": true
+
     },
     {
         "image": "/images/trend/trending09.png",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": false
+
     },    
     {
-        "image": "/images/trend/trending10.png",
+        "image": "/video/vid4.mp4",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": true
+
     },
+    
     {
-        "image": "/images/trend/trending11.png",
+        "image": "/video/vid5.mp4",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
-    },
-    {
-        "image": "/images/trend/trending12.png",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": true
+
     },
     {
         "image": "/images/trend/trending13.png",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "autor": "User 001",
-        "price": "1350"
+        "price": "1350",
+        "video": false
+
     }
 
 ]

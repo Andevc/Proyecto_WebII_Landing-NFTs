@@ -46,37 +46,35 @@ const { title } = Astro.props;
 	}
 	:root {
 		--bg-gradient: linear-gradient(45deg, #21D4FD 0%, #B721FF 100%);
+		--color-primary:#ff004c ;
+		--color-secondary:#21D4FD;
+		
 	}
 	html {
 		background: #020202;
-		background-size: 224px;
 	}
 	body{
-		background:linear-gradient(#00000077, #00000077), url('../assets/images/Background/bg.webp');
+		background:linear-gradient(#00000099, #00000077), url('../assets/images/Background/bg.webp');
 		background-repeat: repeat;
 		min-width: 1080px;
-
 	}
 
 	.main-slot{
 		padding-top: 100px;
 		margin: 0 auto;
-		
+		width: 85%;
 	}
-	h1, .txt-tittle{
+	.txt-tittle{
 		font-family: 'Akira', sans-serif;
-		font-size: 4rem;
+		font-size: 3.5rem;
 		font-weight: 700;
-		line-height: 1;
 		text-align: left;
-		margin-bottom: .5em;
 		letter-spacing: 3px;
-		text-wrap: wrap;
 		filter: drop-shadow(0 0 10px black);
 		color: white;
 	}
 	.text-gradient{
-		background: linear-gradient(to right, #ff004c , #3b82f6 );
+		background: linear-gradient(120deg, var(--color-primary) , var(--color-secondary) );
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: cover;

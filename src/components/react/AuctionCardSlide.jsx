@@ -2,54 +2,48 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
-
 import 'swiper/css/navigation';
-
-
 import '@styles/AuctionSlider.css'
-
 import auctionInfo from '@lib/auctionArt.json'
-
 import moment from 'moment';
 
 const CountdownTimer = ({ targetDays }) => {
-  const targetDate = moment().add(targetDays, 'days');
-  const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
+    const targetDate = moment().add(targetDays, 'days');
+    const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeRemaining(calculateTimeRemaining());
-    }, 1000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTimeRemaining(calculateTimeRemaining());
+        }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+        return () => clearInterval(interval);
+    }, []);
 
-  function calculateTimeRemaining() {
-    const now = moment();
-    const diff = targetDate.diff(now, 'milliseconds');
+    function calculateTimeRemaining() {
+        const now = moment();
+        const diff = targetDate.diff(now, 'milliseconds');
 
-    if (diff <= 0) {
-      // El tiempo objetivo ha pasado
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+        if (diff <= 0) {
+            return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+        }
+
+        const duration = moment.duration(diff);
+        return {
+            days: duration.days(),
+            hours: duration.hours(),
+            minutes: duration.minutes(),
+            seconds: duration.seconds(),
+        };
     }
 
-    const duration = moment.duration(diff);
-    return {
-      days: duration.days(),
-      hours: duration.hours(),
-      minutes: duration.minutes(),
-      seconds: duration.seconds(),
-    };
-  }
-
     return (
-        <p className="text-3xl font-semibold tracking-wide">
+        <p className="p-text-primary">
             {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s
         </p>
     );
 };
 
-export default function AuctionCards(){
+export default function AuctionCards({path}){
     return(
         <Swiper
             
@@ -68,17 +62,17 @@ export default function AuctionCards(){
             auctionInfo.map((item, index) => (
                 <SwiperSlide key={index}>
                     <section class="slider-section">
-
                         <section class="slider-card">
-                            {/* Auction Image */}
                             <section class="slider-card-img">
-                                <img src={item.img} alt={item.imgTittle} />
+                                { 
+                                    item.video === true
+                                    ? <video muted autoplay={"autoplay"} loop>
+                                        <source src={item.img} type="video/mp4" />
+                                    </video>
+                                    : <img src={item.img} alt={item.imgTittle} /> 
+                                }
                             </section>
-                            
-                            {/* Auction Description */}
-
                             <section class="slider-card-content">
-                                
                                 <section class="slider-card-content-header">
                                     <h1 className="text-5xl tracking-widest">{item.tittle}</h1>
                                     <section className="slider-card-content-header-user">
@@ -91,28 +85,29 @@ export default function AuctionCards(){
                                         </section>
                                         <section >
                                             <p className='text-xl font-semibold tracking-widest '>{item.autor}</p>
-                                            <p className='text-gray-400 tracking-wider' >@{item.userNane}</p>
+                                            <p className='p-text-secondary' >@{item.userNane}</p>
                                         </section>    
                                     </section>
                                 </section>
-
-
                                 <section className="slider-card-content-info">
                                     <section className='content-info-price' >
-                                        <p className="text-gray-400 tracking-widest">Current Bid</p>
-                                        <p className="text-3xl font-semibold tracking-wide">{item.priceNFT} ETH</p>
-                                        <p className="text-gray-400 tracking-widest">${item.priceUSD} </p>
+                                        <p className="p-text-secondary">( Current Bid )</p>
+                                        <p className="p-text-primary">{item.priceNFT} ETH</p>
+                                        <p className="p-text-secondary">( ${item.priceUSD} )</p>
                                     </section>
                                     <section className='content-info-auction'>
-                                        <p className="text-gray-400 tracking-widest">Auction end in</p>
+                                        <p className="p-text-secondary">( Auction end in )</p>
                                         <CountdownTimer targetDays={item.auction}/>
-                                        <p className="text-gray-400 tracking-widest">{item.date}</p>
+                                        <p className="p-text-secondary">( {item.date} )</p>
                                     </section>
-
                                 </section>
-                                
                                 <section class="slider-card-buttons">
-                                    
+                                    <section className='card-bnt-primary'>
+                                        <a href={path} >Place a bid</a>
+                                    </section>
+                                    <section className='card-bnt-secondary'>
+                                        <a href={path} className='bg-[#313131] hover:bg-[#6e6e6e]'>View Artwork</a>
+                                    </section>
                                 </section>
                             </section>
                         </section>

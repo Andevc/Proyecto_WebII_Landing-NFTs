@@ -1,6 +1,6 @@
 [
     {
-        "img": "/images/trend/trending04.png",
+        "img": "/video/vid1.mp4",
         "imgTittle": "auction crypto art ",
         "tittle": "Live Arts",
         "autor": "Jimmy Wright",
@@ -9,7 +9,8 @@
         "priceNFT": "3.14",
         "priceUSD": "1079,69",
         "auction": "25",
-        "date": "November 22, 2023"
+        "date": "November 22, 2023",
+        "video": true
     },
     {
         "img": "/images/trend/trending05.png",
@@ -21,10 +22,11 @@
         "priceNFT": "2.25",
         "priceUSD": "7734,33",
         "auction": "15",
-        "date": "November 30, 2023"
+        "date": "November 30, 2023",
+        "video": false
     },
     {
-        "img": "/images/trend/trending13.png",
+        "img": "/video/vid2.mp4",
         "imgTittle": "auction crypto art ",
         "tittle": "Red Ocean",
         "autor": "Monica Lucas",
@@ -33,7 +35,8 @@
         "priceNFT": "2.54",
         "priceUSD": "8935,37",
         "auction": "30",
-        "date": "December 1, 2023"
+        "date": "December 1, 2023",
+        "video": true
     },
     {
         "img": "/images/trend/trending10.png",
@@ -45,6 +48,33 @@
         "priceNFT": "3.14",
         "priceUSD": "2003,21",
         "auction": "8",
-        "date": "November 29, 2023"
+        "date": "November 29, 2023",
+        "video": false
+    },
+    {
+        "img": "/video/vid5.mp4",
+        "imgTittle": "auction crypto art ",
+        "tittle": "Red Ocean",
+        "autor": "Eliza Lucas",
+        "avatar": "/images/avatars/avatar_profile_05.png",
+        "userNane": "lucaa",
+        "priceNFT": "2.54",
+        "priceUSD": "8935,37",
+        "auction": "30",
+        "date": "December 1, 2023",
+        "video": true
+    },
+    {
+        "img": "/images/trend/trending02.png",
+        "imgTittle": "auction crypto art ",
+        "tittle": "Comming Arts",
+        "autor": "Andres Escb",
+        "avatar": "/images/avatars/avatar_profile_10.png",
+        "userNane": "Andev",
+        "priceNFT": "3.14",
+        "priceUSD": "2003,21",
+        "auction": "8",
+        "date": "November 29, 2023",
+        "video": false
     }
 ]

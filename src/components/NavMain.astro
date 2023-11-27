@@ -1,59 +1,74 @@
 ---
 import Button from "./ui/Button.astro";
+import {Image} from 'astro:assets';
+import logo from '@assets/images/ArtFLow-Logo.webp'
+
 ---
-<nav class="bg-[#1c1c1c] w-full h-24 flex justify-around items-center fixed top-0 z-[100000] backdrop-blur-md dark:bg-transparent page-scrolling " transition:animate="none">
-    <section class="text-white">
-        Andev Soft
-    </section>
-    <section class="w-1/2 h-10 flex justify-center items-center  ">
-        <ul class="w-full   flex justify-evenly items-center text-white">
-            <li>
-                <a href="/">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="/market">
-                    Market
-                </a>
-            </li>
-            <li>
-                <a href="/discover">
-                    Dicover
-                </a>
-            </li>
-            <li>
-                <a href="/resource">
-                    Resoures
-                </a>
-            </li>
-            <li>
-                <a href="/pricing">
-                    Pricing
-                </a>
-            </li>
-            
-        </ul>
-    </section>
-    <section>
-        <Button text="Get Started" />
+<nav class="navbar">
+    <a href="/" class="navbar-logo">
+        <Image src={logo} alt="logo" />
+        
+    </a>
+    <ul class="navbar-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/explore">Explore</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+    </ul>
+    
+    <section class="navbar-buttons">
+        <Button text='Register'/>
     </section>
 </nav>
 
 <style>
-    .page-scrolling{
-        -webkit-mask-image: linear-gradient(0deg, transparent 0%, rgb(0,0,0) 1rem);
+    .navbar{        
+        margin: 0 auto;
+        width: 100%;
+        padding: .5em 6em;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 2em;
+        position: fixed;
+        top: 0;
+        z-index: 100000;
+        backdrop-filter: blur(1em);
+        color: white;
+    }
+    
+    a img{
+        height: 60px;
     }
 
-    a{
-        padding: 2px 5px;
-        letter-spacing: .2em;
+    .navbar-buttons{
+        border: 1px solid salmon;
+    }
+    .navbar-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2em;
+        place-items: center;
+
     }
 
-    a:hover{
-        border-bottom: 2px ;
-        color: #ff004c;
-        border-bottom-color: #ff004c;
+    li{
+        width: 80%;
+        height: 90%;
+    }
+    li, li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    li a{
+        width: 100%;
+        height: 100%;
+    }
+    li:hover a{
+        border-bottom: 1px solid var(--color-primary);
+        color: var(--color-primary);
     }
 
+    
 </style>
+
