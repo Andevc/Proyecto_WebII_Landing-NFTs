@@ -45,7 +45,7 @@ const { title } = Astro.props;
 		font-style: normal;
 	}
 	:root {
-		--bg-gradient: linear-gradient(45deg, #21D4FD 0%, #B721FF 100%);
+		--bg-gradient: linear-gradient(45deg, #ff004c 0%, #21D4FD 100%);
 		--color-primary:#ff004c ;
 		--color-secondary:#21D4FD;
 		
@@ -66,12 +66,14 @@ const { title } = Astro.props;
 	}
 	.txt-tittle{
 		font-family: 'Akira', sans-serif;
-		font-size: 3.5rem;
+		font-size: 3.2rem;
 		font-weight: 700;
 		text-align: left;
 		letter-spacing: 3px;
 		filter: drop-shadow(0 0 10px black);
 		color: white;
+		text-wrap: balance;
+		
 	}
 	.text-gradient{
 		background: linear-gradient(120deg, var(--color-primary) , var(--color-secondary) );
@@ -81,9 +83,10 @@ const { title } = Astro.props;
 		background-position: center;	
 	}
 	
-	.p {
+	.txt-paragraph {
 		color: white;
 		font-size: 1.5em;
 		font-family: 'OliviarSansLg', sans-serif;
+		text-wrap: balance;
 	}	
 </style>

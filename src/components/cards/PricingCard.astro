@@ -1,22 +1,13 @@
 ---
-
 import Link from "@components/ui/Link.astro";
-
 const { plan } = Astro.props;
-
 const popularPlan = plan.popular ? "primary" : "secondary";
-
 ---
-
-
 <section class:list={["pricing-card", popularPlan]}>
-    
-    <!-- Price Name -->
     <section class="pricing-name">
-        <h3>
-            {plan.name}
-        </h3>
+        {plan.name}
     </section>
+
     <!-- Price Plan -->
     <section class="mt-10 text-4xl text-start  font-bold text-white md:text-4xl">
         {
@@ -32,6 +23,7 @@ const popularPlan = plan.popular ? "primary" : "secondary";
             )
         }
     </section>  
+
     <p class="text-2xs text-start mt-2 text-white">
         {plan.info}
     </p>
@@ -40,8 +32,8 @@ const popularPlan = plan.popular ? "primary" : "secondary";
     <ul class="grid mt-8 text-left gap-y-4">
         {
             plan.features.map((item : any) => (
-            <li class="flex items-center py-2 gap-3 border-b ">
-                <svg class="flex-shrink-0 w-4 h-4 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <li class="flex items-center gap-3 ">
+                <svg class="flex-shrink-0 w-4 h-4 text-white " aria-hidden="true"  fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                 </svg>
                 <p class="text-base text-white">{item}</p>
@@ -63,33 +55,34 @@ const popularPlan = plan.popular ? "primary" : "secondary";
 
 <style>
     .pricing-card{
-        widows: 400px;
-        height: 600px;
-        padding: 2em;
         
+        padding:1em 2em 2em;
         background: #090909;
         border-radius: 2em;
         box-shadow: 4px 0 15px black;
         transition: all .5s;
         position: relative;
         overflow: hidden;
-    }
-    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5em;
+    }    
     .primary{
-        transform: scale(1.2);     
-        z-index: 1;
+        transform: scale(1.1);     
+        z-index: 10;
     }
 
     .primary::before{
         content: "";
         position: absolute;
-        transform: scale(.5);  
+        transform: scale(.3);  
         border-radius: 50%;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        background: linear-gradient(to right, #ff004c, #3b82f6);
+        background: linear-gradient(to right, #ff004caa, #3b82f6aa);
         filter: blur(10em);
         z-index: -1;
     }
@@ -112,7 +105,7 @@ const popularPlan = plan.popular ? "primary" : "secondary";
     }
 
     .pricing-name{
-        width: 75%;
+        width: 100%;
         height: 2em;
         display: flex;
         justify-content: center;
@@ -126,7 +119,7 @@ const popularPlan = plan.popular ? "primary" : "secondary";
         box-shadow: 0 2px 15px black;
         position: absolute;
         top: 10%;
-        left: 45%;
+        left: 30%;
         transform: rotate(45deg);
     }
 

@@ -1,6 +1,18 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import PricingCard from "@components/cards/PricingCard.astro"
+import Layout from '@layouts/Layout.astro';
+import PricingCard from '@components/cards/PricingCard.astro';
+import Art from '@assets/icons/art.astro';
+import Support from '@assets/icons/support.astro';
+import Garantia from '@assets/icons/garantia.astro';
+import {Image} from 'astro:assets';
+import bgContainer from '@assets/images/patner/earstcg.png'
+import coins from '@assets/images/patner/ogrvmg2x-1024x926.png';
+import patner1 from '@assets/images/patner/abadar.png';
+import patner2 from '@assets/images/patner/breally.png';
+import patner3 from '@assets/images/patner/designStudio.png';
+import patner4 from '@assets/images/patner/gray-logo-crypto.png';
+import patner5 from '@assets/images/patner/happenz.png';
+import patner6 from '@assets/images/patner/minimal.png';
 
 
 const pricing = [
@@ -72,14 +84,265 @@ const pricing = [
 ];
 ---
 <Layout title="Pricing">
-    <section class=" h-full mb-36 pt-28">
-        <section class="text-center mt-26 ">
-            <h1 class="text-center text-gradient">Pricing</h1>
-            <p class="text-white text-3xl">Simple & Predictable pricing. No surprices.</p>
+    <main>
+        <section class="pricing-container-main">
+            <section class="pricing-container-main-content">
+                <h1 class="txt-tittle">Pague con las <span class="text-gradient">criptomonedas</span> mas populares</h1>
+                <p class="txt-paragraph">
+                    ¡Descubre las diferentes opciones disponibles para adquirir nuestras 
+                    increíbles obras de arte criptográfico en [Nombre de tu Plataforma]!
+                </p>
+                <a href="/">Empezar</a>
+            </section>
+            <section class="pricing-container-main-img">
+                <Image src={bgContainer} class="img-bg" alt="image"/>
+                <Image src={coins} class="img-bg-2" alt="image"/>
+            </section>
         </section>
-        <section class="grid md:grid-cols-3 gap-16 m-[200px] max-w-screen-lg mt-28">
+        <section class="pricing-container">
+            <h1 class="txt-tittle text-gradient">Nuestros Servicios</h1>
+            
+        </section>
+        <section class="pricing-container pricing-info">
+			<section class="pricing-info-card">
+				<section class="pricing-info-card-icon">
+					<Art
+						size="45"
+						stroke="#fff"/>
+				</section>
+				<section>
+					<h3>Tipos de Obras</h3>
+					<p>
+						Explora nuestra variedad de obras, desde piezas únicas hasta ediciones 
+                        limitadas. Cada tipo de obra tiene su propio encanto y exclusividad. 
+                        Descubre cuál se adapta mejor a tu gusto y estilo.
+					</p>
+				</section>
+			</section>
+			<section class="pricing-info-card">
+				<section class="pricing-info-card-icon">
+					<Support
+						size="50"
+						stroke="#fff"/>
+				</section>
+
+				<section>
+					<h3>Asesoramiento Personalizado</h3>
+					<p>
+						¿Necesitas ayuda para elegir la obra perfecta dentro de 
+                        tu presupuesto? Nuestro equipo de asesores está aquí para 
+                        ayudarte. Ponte en contacto para obtener asesoramiento personalizado 
+                        y garantizar que tu compra sea una experiencia única.
+					</p>
+				</section>
+			</section>
+			<section class="pricing-info-card">
+				<section class="pricing-info-card-icon">
+					<Garantia
+						size="45"
+						stroke="#fff"
+                        />
+				</section>
+
+				<section>
+					<h3>Garantía de Autenticidad</h3>
+					<p>
+						Cada obra de arte viene con una garantía de autenticidad. 
+                        En [Nombre de tu Plataforma], nos comprometemos a ofrecer 
+                        obras genuinas y de alta calidad para que puedas disfrutar 
+                        de tu inversión con total confianza.
+					</p>
+				</section>
+			</section>
+		</section>
+
+        <section class="pricing-container">
+            <h1 class="txt-tittle text-gradient">El hogar mas confiable del arte criptografico</h1>
+            <p class="txt-paragraph text-center">
+                Nuestra plataforma, ArtFlow, es intuitiva y potente para construir tu experiencia artística. 
+                Cada detalle ha sido cuidadosamente diseñado para respaldar una inmersión única en el 
+                mundo del arte criptográfico a gran escala. Inicialmente concebida por nuestro equipo, 
+                hoy en día, ArtFlow se ha convertido en una red descentralizada respaldada y desarrollada 
+                por una comunidad en constante crecimiento.
+            </p>
+            <section class="pricing-container-patners">
+                <section class="patner">
+                    <Image src={patner1} alt="patner-logo" class="patner-logo"/>
+                </section>
+                <section class="patner">
+                    <Image src={patner2} alt="patner-logo" class="patner-logo"/>
+                </section>
+                <section class="patner">
+                    <Image src={patner4} alt="patner-logo" class="patner-logo"/>
+                </section>
+                <section class="patner">
+                    <Image src={patner3} alt="patner-logo" class="patner-logo"/>
+                </section>
+                <section class="patner">
+                    <Image src={patner5} alt="patner-logo" class="patner-logo"/>
+                </section>
+                <section class="patner">
+                    <Image src={patner6} alt="patner-logo" class="patner-logo"/>
+                </section>
+            </section>
+        </section>
+        <h1 class="txt-tittle text-gradient">Precios</h1>
+        <section class="pricing-card">
             {pricing.map((item) => <PricingCard plan={item}/>)}
         </section>
-    </section>
+        
+    </main>
 </Layout>
 
+<style>
+    main{
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+    * h1{
+        text-align: center;
+    }
+    .pricing-container-main{
+        height: 550px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        margin-bottom: 5em;
+    }
+    .pricing-container-main-content, .pricing-container-main-img{
+        width: 50%;
+        height: 100%;
+    }
+
+    .pricing-container-main-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        justify-content: center;
+
+    }
+    .pricing-container-main-content h1{
+        text-align: left;
+        text-wrap: balance;
+        font-size: 2.9em;
+    }
+    .pricing-container-main-content a{
+        width: 150px;
+        height: 50px;
+        padding: 1em 2em;
+        background: var(--color-primary);
+        border-radius: .5em;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transition: .3s;
+    }
+    .pricing-container-main-content a:hover{
+        box-shadow: 0 0 30px var(--color-primary);
+    }
+    .pricing-container-main-content a:active{
+        transform: translateY(5px);
+    }
+
+    .pricing-container-main-img{
+        position: relative;
+    }
+    .pricing-container-main-img .img-bg,.pricing-container-main-img .img-bg-2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .pricing-container{
+        width: 90%;
+        margin: 1em auto 5em;
+    }
+    .pricing-card{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4em;
+        place-items: top;
+        margin: 5em auto;
+    }
+    .pricing-info{
+        width: 100%;
+		height: 350px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 3em;
+        margin: 5em 0;
+	}
+
+	.pricing-info-card{
+		position: relative;
+		z-index: 10;
+		color: white;
+		background: #090909;
+		box-shadow: 0 0 50px black;
+		border-radius: 2em;
+		padding: 3em;
+		transition: .5s;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-around;
+	}	
+	.pricing-info-card h3{
+		font-weight: bold;
+		letter-spacing: 2px;
+	}
+
+	.pricing-info-card-icon{
+		width: 60px;
+		height: 60px;
+		background: linear-gradient(to bottom right, #ff004c , #3b82f6 );
+		border-radius: 1em;
+		display:grid;
+		place-items: center;	
+	}
+
+	.pricing-info-card::after, .pricing-info-card::before{
+		content: "";
+		position: absolute;
+		width: 25%;
+		height: 25%;
+		border-radius: 50%;
+		z-index: -1;
+		filter: blur(10em);
+		transform: scale(.7);
+		
+	}
+
+	.pricing-info-card::after{
+		background: #ff004c;
+		top: 0;
+		left: 0;
+	}
+	.pricing-info-card::before{
+		background: #3b82f6;
+		bottom: 0;
+		right: 0;
+	}
+	.pricing-info-card:hover{	
+		transform:scale(1.1);
+	}
+
+    .pricing-container-patners{
+        padding: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 3em;
+        column-gap: 2em;
+        place-items: center;
+    }
+
+    .pricing-container-patners .patner{
+        padding: 1em;
+    }
+</style>

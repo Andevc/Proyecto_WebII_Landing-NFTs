@@ -1,10 +1,199 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import {Image} from 'astro:assets';
+
+import art  from '/public/images/about/art.webp';
+import community  from '/public/images/about/community.webp';
+import mission  from '/public/images/about/mission.webp';
+
+import artist1 from '/public/images/about/artist1.webp'
+import artist2 from '/public/images/about/artist2.webp'
+import artist3 from '/public/images/about/artist3.webp'
+
 ---
 
 <Layout title="About" >
-<main>
-    <h1>ABOUT</h1>
-</main>
+    <main>
+        <section class="about-container-normal">
+        
+            <h1 class="txt-tittle">Sobre <span class="text-gradient">Nosotros</span></h1>
+            <p class="txt-paragraph">
+                Bienvenido a [Nombre de tu Plataforma], donde la creatividad se encuentra con la tecnología para dar vida a un mundo 
+                único de arte criptográfico. En esta plataforma, nos dedicamos a explorar la intersección fascinante entre la creatividad 
+                artística y la tecnología de vanguardia.
+            </p>
+        
+        </section>
+        <section class="about-container">
+            <section class="about-container-content">
+                <h1 class="txt-tittle">Nuestra <span class="text-gradient">Mision</span></h1>
+                <p class="txt-paragraph">
+                    En [Nombre de tu Plataforma], creemos en empoderar a los artistas para que exploren nuevas formas de expresión 
+                    a través de la criptografía. Buscamos redefinir los límites del arte digital al fusionar la belleza estética con 
+                    la innovación tecnológica.
+                </p>
+
+            </section>
+            <section class="about-container-img">
+                <Image src={mission} alt="about-image" class={'image'} />
+
+            </section>
+        </section>
+        <section class="about-container">
+            <section class="about-container-content">
+                <h1 class="txt-tittle">Que es el <span class="text-gradient">Arte Criptografico?</span> </h1>
+                <p class="txt-paragraph">
+                    El arte criptográfico va más allá de las tradicionales formas de expresión. Aquí, los artistas utilizan algoritmos, 
+                    blockchain y otras tecnologías para crear piezas únicas e inmutables. Cada obra es una fusión de creatividad y 
+                    codificación, capturando la esencia de la era digital.
+                </p>
+
+            </section>
+            <section class="about-container-img">
+                <Image src={art} alt="about-image"class={'image'} />
+
+            </section>
+        </section>
+        <section class="about-container">
+            <section class="about-container-content">
+                <h1 class="txt-tittle">Compromiso con la <span class="text-gradient">Comunidad</span></h1>
+                <p class="txt-paragraph">
+                    En [Nombre de tu Plataforma], valoramos la comunidad que ha hecho posible este viaje. Fomentamos la 
+                    participación, el diálogo y la colaboración entre artistas y amantes del arte criptográfico. Únete a nosotros 
+                    mientras exploramos juntos las fronteras de la creatividad digital.
+                </p>
+            </section>
+            <section class="about-container-img">
+                <Image src={community} alt="about-image"class={'image'} />
+
+            </section>
+        </section>
+        <section class="about-container">
+            <section class="about-container-content">
+                <h1 class="txt-tittle">Nuestros <span class="text-gradient">Artistas</span></h1>
+                <p class="txt-paragraph">
+                    Conoce a los talentosos artistas que forman parte de nuestra comunidad. Desde visionarios establecidos 
+                    hasta emergentes pioneros, cada uno aporta su perspectiva única al mundo del arte criptográfico. Descubre 
+                    sus historias, inspiraciones y la magia detrás de sus creaciones.
+                </p>
+            </section>
+            <section class="about-container-gallery">
+                <section class="container-gallery-img img1">
+                    <Image src={artist2} alt="gallery-image"class={'gallery-img'} />
+                </section>
+                <section class="container-gallery-img img2">
+                    <Image src={artist1} alt="gallery-image"class={'gallery-img'} />
+                </section>
+                <section class="container-gallery-img img3">
+                    <Image src={artist3} alt="gallery-image"class={'gallery-img'} />
+                </section>
+            </section>
+            
+        </section>
+        <section class="about-container-normal">
+            <h1 class="txt-tittle text-gradient">Contactanos</h1>
+            <p class="txt-paragraph">
+                ¿Tienes preguntas, sugerencias o simplemente quieres conectarte con nosotros? Estamos aquí para escucharte. 
+                Contáctanos en [correo electrónico] o a través de nuestras redes sociales.
+            </p>
+        </section>
+    </main>
     
 </Layout>
+
+<style>
+    main{
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+    .about-container{
+        height: 450px;
+        width: 100%;
+        margin: 4em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4em;
+
+    }
+    .about-container-content{
+        width: 65%;
+    }
+    .about-container-img {
+        width:30%;
+        height: 100%;
+        border-radius: 3em;
+        position: relative;
+        z-index: 10;
+    }
+    .about-container-img::after, .about-container-gallery::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-gradient);
+        filter: blur(4em);
+        transform: scale(.85);
+        z-index: -1;
+    }
+    .about-container-img .image{
+        width: 100%;
+        height: 100%;
+        transform: scale(.98);
+        border-radius: 3em;
+        padding: .5em;
+        box-shadow: 0 0 20px black;
+    }
+    .about-container-normal{
+        margin-bottom: 4em;
+    }
+    .about-container-normal h1, .about-container-normal p{
+        text-align: center;
+    }
+    .about-container:nth-child(even){
+        flex-direction: row;
+    }
+    .about-container:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+    .about-container:nth-child(odd) .about-container-img{
+        transform: rotate(5deg);
+    }
+    .about-container:nth-child(even) .about-container-img{
+        transform: rotate(-5deg);
+    }
+    .about-container-gallery{
+        width: 55%;
+        height: 100%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em;
+        position: relative;
+        z-index: 10;
+    }
+    .container-gallery-img{
+        border-radius: 2em;
+        overflow: hidden;
+    }
+    .gallery-img{
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 100%;
+        border-radius: 2em;
+    }
+    .img1{
+        grid-row:span 2;
+        grid-column: 1;
+    }
+    .img1, .img2, .img3{
+        
+        padding: .5em;
+        box-shadow: 0 0 20px black;
+    }
+
+</style>
