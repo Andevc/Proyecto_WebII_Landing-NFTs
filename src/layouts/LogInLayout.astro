@@ -1,0 +1,100 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script src="https://kit.fontawesome.com/b440907daf.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<main>
+			<a href="/" class="text-7xl absolute left-12 -top-3 z-[1000] hover:text-[#ff004c]"><i class="fa-solid fa-circle-xmark" ></i></a>
+			<slot />
+		</main>
+		
+		
+		
+	</body>
+</html>
+
+<style is:global>
+	@font-face{
+		font-family: 'Akira' ;
+		src: url('/fonts/AkiraExpandedDemo.woff2') format('woff2');
+		font-style: normal;
+	}
+	@font-face{
+		font-family: 'OliviarSansLg' ;
+		src: url('/fonts/OliviarSans-Light.woff2') format('woff2');
+		font-style: normal;
+	}
+	@font-face{
+		font-family: 'OliviarSansRg' ;
+		src: url('/fonts/OliviarSans-Regular.woff2') format('woff2');
+		font-style: normal;
+	}
+	:root {
+		--bg-gradient: linear-gradient(45deg, #ff004c, #21D4FD );
+		--color-primary:#ff004c ;
+		--color-secondary:#21D4FD;
+		--color-text: #f1f1f1;
+	}
+	
+	body{
+		background:linear-gradient(#00000077, #00000077), url('../assets/images/Background/bg.webp');
+		background-repeat: repeat;
+        background-position: center;
+		color: var(--color-text);
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	main{
+		margin: 0 auto;
+		width: 80%;
+		height: 90%;
+		position: relative;
+
+	}
+	
+	.txt-title{
+		font-family: 'Akira', sans-serif;
+		font-size: 2.5rem;
+		font-weight: 700;
+		text-align: left;
+		letter-spacing: 3px;
+		filter: drop-shadow(0 0 10px black);
+		color: var(--color-text);
+		text-wrap: balance;
+		
+	}
+	.text-gradient{
+		background: var(--bg-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: cover;
+		background-position: center;	
+	}
+	
+	.txt-paragraph {
+		color: var(--color-text);
+		font-size: 1.5em;
+		font-family: 'OliviarSansLg', sans-serif;
+		text-wrap: balance;
+		
+	}	
+
+
+</style>

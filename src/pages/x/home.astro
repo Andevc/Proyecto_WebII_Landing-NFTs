@@ -1,0 +1,59 @@
+---
+import DashboardLayout from "@layouts/DashboardLayout.astro";
+import AuctionSlider from '@components/react/AuctionCardSlide.jsx'
+---
+
+<DashboardLayout tittle="home">
+    <section class="header header-banner">
+        <AuctionSlider path={'/store'} client:load />
+    </section>
+	<main>
+
+		<section class="border border-purple-500 rounded-2xl "></section>
+		<section class="border border-purple-500 rounded-2xl "></section>
+		<section class="border border-purple-500 rounded-2xl "></section>
+		<section class="border border-purple-500 rounded-2xl "></section>
+		<section class="border border-purple-500 rounded-2xl "></section>
+	</main>
+</DashboardLayout>
+
+<style>
+	main{
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 2em;
+		
+	}
+    .header{
+    
+		
+		margin: 0 auto 5em; 
+	
+    }
+    .header-banner{
+        overflow: hidden;
+		width: 100%;
+		height: 500px;
+		color: #fff;
+		display: flex;
+
+		justify-content: flex-start;
+		align-items: center;
+		position: relative;		
+        border: 1px solid orange;
+	}
+
+	.header-banner::before{
+		content: "";
+		width: 100%;
+		height: 40%;	
+		border-radius: 3em ;
+		position: absolute;
+		filter: blur(15em);
+		transform: scale(.7);
+		background: linear-gradient(to left, crimson, cyan);
+	}
+</style>
