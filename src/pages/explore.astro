@@ -2,23 +2,23 @@
 import Layout from "@layouts/Layout.astro";
 import MarketSlider from "@components/react/AuctionCardSlide.jsx";
 import TrendTopSlider from "@components/react/TrendTopSlider.jsx";
-import TopCreators from "@components/nose/TopCreators.astro";
+import TopCreators from "@components/TopCreators.astro";
 import WalletIcon from "@assets/icons/wallet.astro";
 import AddIcon from "@assets/icons/add.astro"
-import SellIcon from "@assets/icons/sell.astro";
+import SellIcon from "@assets/icons/sell.astro"; 
 ---
 <Layout title="Market">
 	<main class="main-slot">
-		<section class="market-container market-business-card" >
+		<section class="market-container market-business-card" id="subasta">
 			<MarketSlider client:load path="/"/>
 		</section>
 
-		<h1 class="txt-tittle">Top <span class="text-gradient">Creators</span></h1>
+		<h1 class="txt-tittle" id="topCreators">Top <span class="text-gradient">Creators</span></h1>
 		<section class="market-container market-creators"> 
 			<TopCreators/> 
 		</section>
 
-		<h1 class="txt-tittle">Trending <span class="text-gradient">Top</span></h1>
+		<h1 class="txt-tittle" id="topArt">Trending <span class="text-gradient">Top</span></h1>
 		<section class="market-container market-top-art">
 			<TrendTopSlider client:load/>
 		</section>

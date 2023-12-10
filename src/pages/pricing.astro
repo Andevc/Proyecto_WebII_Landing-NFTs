@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import PricingCard from '@components/cards/PricingCard.astro';
+import Button from "@components/Button_3.astro";
+import PricingCard from '@components/PricingCard.astro';
 import Art from '@assets/icons/art.astro';
 import Support from '@assets/icons/support.astro';
 import Garantia from '@assets/icons/garantia.astro';
@@ -92,7 +93,10 @@ const pricing = [
                     ¡Descubre las diferentes opciones disponibles para adquirir nuestras 
                     increíbles obras de arte criptográfico en [Nombre de tu Plataforma]!
                 </p>
-                <a href="/">Empezar</a>
+                <section class="w-1/2">
+                    <Button text="Empezar" href="/login" />
+                </section>
+                
             </section>
             <section class="pricing-container-main-img">
                 <Image src={bgContainer} class="img-bg" alt="image"/>

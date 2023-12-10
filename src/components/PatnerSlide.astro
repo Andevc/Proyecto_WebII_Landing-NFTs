@@ -1,0 +1,146 @@
+---
+import patner1 from "@assets/images/patner/abadar.png";
+import patner2 from "@assets/images/patner/breally.png";
+import patner6 from "@assets/images/patner/designStudio.png";
+import patner3 from "@assets/images/patner/gray-logo-crypto.png";
+import patner5 from "@assets/images/patner/happenz.png";
+import patner4 from "@assets/images/patner/minimal.png";
+import { Image } from "astro:assets";
+---
+    
+<section class="content">
+    <section class="basic-marquee basic-marquee-1">
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner1} alt="patner" class="img" />
+            </a>
+        </section>
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner2} alt="patner" class="img" />
+            </a>
+        </section>
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner3} alt="patner" class="img" />
+            </a>
+        </section>
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner4} alt="patner" class="img" />
+            </a>
+        </section>
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner5} alt="patner" class="img" />
+            </a>
+        </section>
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner6} alt="patner" class="img" />
+            </a>
+        </section>
+
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner1} alt="patner" class="img" />
+            </a>
+        </section>
+
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner2} alt="patner" class="img" />
+            </a>
+        </section>
+
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner3} alt="patner" class="img" />
+            </a>
+        </section>
+
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner4} alt="patner" class="img" />
+            </a>
+        </section>
+
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner5} alt="patner" class="img" />
+            </a>
+        </section>
+        <section class="social-media-link">
+            <a href="#">
+                <Image src={patner6} alt="patner" class="img" />
+            </a>
+        </section>
+    </section>
+</section>
+
+
+<style>
+    .content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .content::before,
+    .content::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: 0;
+        width: 30%;
+        height: 100%;
+    }
+    .content::before {
+        left: 0;
+        background-image: linear-gradient(to right, #000000, transparent);
+        z-index: 2;
+    }
+    .content::after {
+        right: 0;
+        background-image: linear-gradient(to left, #000000, transparent);
+        z-index: 2;
+    }
+    .basic-marquee {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+        width: 100%;
+        height: 90%;
+    }
+    .basic-marquee .social-media-link a{
+        height: 100%;
+        width: 200px;
+        display: grid;
+        place-items: center;
+    }
+    .basic-marquee .social-media-link a .img{
+        transition: all 0.5s;
+    }
+    .basic-marquee .social-media-link:hover a .img {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    .basic-marquee-1 {
+        animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-80%);
+        }
+    }
+</style>

@@ -6,7 +6,8 @@ module.exports = {
 		extend: {
 			Akira: "'Akira'",
 			OliviarSansLg: "'OliviarSans-Light'",
-			OliviarSansRg: "'OliviarSans-Regular'"	
+			OliviarSansRg: "'OliviarSans-Regular'",
+			
 		},
 	},
 	plugins: [],

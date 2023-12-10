@@ -1,8 +1,7 @@
 ---
-import { ViewTransitions, slide} from 'astro:transitions'; 
-import NavBar from '../components/NavMain.astro';
-import Footer from '../components/Footer.astro';
-import AkiraFont from '@assets/fonts/AkiraExpandedDemo.woff2';
+import { ViewTransitions, fade} from 'astro:transitions'; 
+import NavBar from '@components/NavMain.astro';
+import Footer from '@components/Footer.astro';
 interface Props {
 	title: string;
 }
@@ -10,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" transition:animate={slide({ duration: "1s" })}>
+<html lang="en" transition:animate={fade({ duration: "1s" })}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -54,7 +53,7 @@ const { title } = Astro.props;
 		background: #020202;
 	}
 	body{
-		background:linear-gradient(#00000099, #00000077), url('../assets/images/Background/bg.webp');
+		background:linear-gradient(#00000099, #00000077), url('../assets/images/bg.webp');
 		background-repeat: repeat;
 		min-width: 1080px;
 	}

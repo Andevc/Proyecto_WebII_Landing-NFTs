@@ -1,0 +1,110 @@
+---
+interface Props {
+    text: string;
+    href: string;
+}
+const { text, href } = Astro.props;
+---
+
+<a href={href}>{text}</a>
+
+<style>
+    a {
+        --border-color: linear-gradient(-45deg, #3b82f6, #ff004c);
+        --border-width: 0.125em;
+        --curve-size: 1em;
+        --blur: 30px;
+        --bg: linear-gradient(to left top, #3b82f6, #ff004c);
+        --color: #fff;
+        color: var(--color);
+        position: relative;
+        isolation: isolate;
+        display: inline-grid;
+        place-content: center;
+        padding: 0.5em 2.5em;
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: .2em;
+        border: none;
+        text-transform: uppercase;
+        clip-path: polygon(
+            /* Top-left */ 0% var(--curve-size),
+            var(--curve-size) 0,
+            /* top-right */ 100% 0,
+            100% calc(100% - var(--curve-size)),
+            /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */ 0 100%
+        );
+        transition: color 250ms;
+    }
+
+    a::after,
+    a::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+
+    a::before {
+        background: var(--border-color);
+        background-size: 150% 150%;
+        animation: move-bg7234 5s ease infinite;
+        z-index: -2;
+    }
+
+    @keyframes move-bg7234 {
+        0% {
+            background-position: 31% 0%;
+        }
+
+        50% {
+            background-position: 70% 100%;
+        }
+
+        100% {
+            background-position: 31% 0%;
+        }
+    }
+
+    a::after {
+        background: var(--bg);
+        z-index: -1;
+        clip-path: polygon(
+            /* Top-left */ var(--border-width)
+                calc(var(--curve-size) + var(--border-width) * 0.5),
+            calc(var(--curve-size) + var(--border-width) * 0.5)
+                var(--border-width),
+            /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width))
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width)),
+            /* bottom-right 2 */ var(--border-width)
+                calc(100% - var(--border-width))
+        );
+        transition: clip-path 500ms;
+    }
+
+    a:where(:hover, :focus)::after {
+        clip-path: polygon(
+            /* Top-left */ calc(100% - var(--border-width))
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            calc(100% - var(--border-width)) var(--border-width),
+            /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width))
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width))
+        );
+        transition: 200ms;
+    }
+
+    a:where(:hover, :focus) {
+        color: #fff;
+    }
+</style>

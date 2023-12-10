@@ -1,6 +1,6 @@
 ---
 import {Image} from 'astro:assets';
-import logo from '@assets/images/logo2.webp'
+import logo from '@assets/images/logo.webp'
 ---
 <footer class=" w-full pt-8 px-8 text-white" transition:animate="none" >
     <hr>
@@ -12,7 +12,7 @@ import logo from '@assets/images/logo2.webp'
             </section>
             <section class="flex flex-row justify-evenly w-full ">
                 <!-- Facebook -->
-                <a href="...">
+                <a href="#">
                     <svg class="social-networks facebook" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <defs>
                             <linearGradient id="fb-gradient" gradientUnits="userSpaceOnUse" fy="90%" >
@@ -27,7 +27,7 @@ import logo from '@assets/images/logo2.webp'
                     </svg>
                 </a>
                 <!-- Instagram -->
-                <a href="...">
+                <a href="#">
                     <svg class="social-networks instagram" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <defs>
                             <linearGradient id="ig-gradient" gradientUnits="userSpaceOnUse" fy="90%" >
@@ -43,7 +43,7 @@ import logo from '@assets/images/logo2.webp'
                     </svg>
                 </a>
                 <!-- Twitter -->
-                <a href="...">
+                <a href="#">
                     <svg class="social-networks twitter" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <defs>
                             <linearGradient id="tw-gradient" gradientUnits="userSpaceOnUse" fy="90%" >
@@ -58,7 +58,7 @@ import logo from '@assets/images/logo2.webp'
                     </svg>
                 </a>
                 <!-- Discord -->
-                <a href="...">
+                <a href="#">
                     <svg class="social-networks discord" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <defs>
                             <linearGradient id="dc-gradient" gradientUnits="userSpaceOnUse" fy="90%" >
@@ -80,58 +80,36 @@ import logo from '@assets/images/logo2.webp'
             <section>
                 <ul>
                     <li class="footer-tittle">
-                        Market
+                        Explorar
                     </li>
                     <li class="footer-content py-1">
-                        <a href="/">All NFTs</a>
+                        <a href="/explore">Explorar</a>
                     </li>
                     <li class="footer-content py-1">
-                        <a href="/">Explore</a>
+                        <a href="#subasta">Subasta de Arte</a>
+                    </li>
+                    
+                    <li class="footer-content py-1">
+                        <a href="#topCreator">Top Creadores</a>
                     </li>
                     <li class="footer-content py-1">
-                        <a href="/">Creators</a>
-                    </li>
-                    <li class="footer-content py-1">
-                        <a href="/">New</a>
+                        <a href="#topArt">Arte Top</a>
                     </li>
                 </ul>
             </section>
             <section>
                 <ul>
                     <li class="footer-tittle">
-                        Earn
+                        Otros
                     </li>
                     <li class="footer-content py-1">
-                        <a href="/">Sell NFTs</a>
+                        <a href="/login">Login</a>
                     </li>
                     <li class="footer-content py-1">
-                        <a href="/">Trade NFTs</a>
+                        <a href="/about">Acerca de Nosotros</a>
                     </li>
                     <li class="footer-content py-1">
-                        <a href="/">Earn support</a>
-                    </li>
-                </ul>
-            </section>
-    
-            <section>
-                <ul>
-                    <li class="footer-tittle">
-                        My Account
-                    </li>
-                    <li class="footer-content py-1">
-                        <a href="/">Login</a>
-                    </li>
-                    <li class="footer-content py-1">
-                        <a href="/">Security</a>
-                    </li>
-                    <li class="footer-content py-1">
-                        <a href="/">Favorites</a>
-                    </li>
-                    <li class="footer-content py-1">
-                        <a href="/">Terms of use</a>
-                    </li>
-                    <li class="footer-content py-1">
-                        <a href="/">Privacy Policy</a>
+                        <a href="/pricing">Precios</a>
                     </li>
                 </ul>
             </section>    
@@ -157,7 +135,7 @@ import logo from '@assets/images/logo2.webp'
         </section>
     </section>
     <hr>
-    <p class="py-2 text-center">Andev 2023 &copy;</p>
+    <p class="py-5 text-center font-bold tracking-[.3em]">Web Warriors 2023 &copy;</p>
 </footer>
 
 <style>
@@ -188,10 +166,9 @@ import logo from '@assets/images/logo2.webp'
 
     }
 
-    .logo-footer{
-        
-        width: 150px;
-        height: 150px;
+    .logo-footer{        
+        width: 100px;
+        height: 100px;
     }
 
     .facebook:hover{

@@ -41,6 +41,17 @@ import SignUp from "@components/SignUp.astro";
         </section>
     </main>
 </LogIn>
+<script is:inline>
+    const signUpBtn = document.querySelector("#signUp");
+    const signInBtn = document.querySelector("#signIn");
+    const main = document.querySelector("#main");
+    signUpBtn?.addEventListener("click", () => {
+        main?.classList.add("right-panel-active");
+    });
+    signInBtn?.addEventListener("click", () => {
+        main?.classList.remove("right-panel-active");
+    });
+</script>
 
 <style>
     :root {
@@ -177,14 +188,4 @@ import SignUp from "@components/SignUp.astro";
     }
 </style>
 
-<script>
-    const signUpBtn = document.querySelector("#signUp");
-    const signInBtn = document.querySelector("#signIn");
-    const main = document.querySelector("#main");
-    signUpBtn?.addEventListener("click", () => {
-        main?.classList.add("right-panel-active");
-    });
-    signInBtn?.addEventListener("click", () => {
-        main?.classList.remove("right-panel-active");
-    });
-</script>
+
