@@ -1,105 +1,105 @@
 [
     {
         "image": "/images/trend/trending00.png",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "avatar": "/images/avatars/avatar_profile_03.png",
+        "autor": "MauMaster",
+        "price": "2.35",
         "video": false
 
     },
     {
         "image": "/images/trend/trending01.png",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "avatar": "/images/avatars/avatar_profile_03.png",
+        "autor": "MauMaster",
+        "price": "3.50",
         "video": false
 
     },
     {
-        "image": "/images/trend/trending02.png",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "image": "/images/trend/trending06.png",
+        "avatar": "/images/avatars/avatar_profile_04.png",
+        "autor": "Satoshi",
+        "price": "1.14",
         "video": false
 
     },
     {
         "image": "/video/vid1.mp4",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "avatar": "/images/avatars/avatar_profile_01.png",
+        "autor": "EtherQueen",
+        "price": "5.14",
         "video": true
 
     },
     {
         "image": "/video/vid3.mp4",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "avatar": "/images/avatars/avatar_profile_01.png",
+        "autor": "EtherQueen",
+        "price": "3.5",
         "video": true
 
     },    {
         "image": "/images/trend/trending05.png",
         "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "autor": "MarcoExplo",
+        "price": "2.22",
         "video": false
 
     },
     {
         "image": "/video/vid2.mp4",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "avatar": "/images/avatars/avatar_profile_05.png",
+        "autor": "SofiArt",
+        "price": "3.54",
         "video": true
 
     },
     {
         "image": "/images/trend/trending07.png",
         "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "autor": "MarcoExplo",
+        "price": "3.2",
         "video": false
 
     },
     {
         "image": "/video/vid6.mp4",
         "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "autor": "MarcoExplo",
+        "price": "3.50",
         "video": true
 
     },
     {
         "image": "/images/trend/trending09.png",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "avatar": "/images/avatars/avatar_profile_04.png",
+        "autor": "Satoshi",
+        "price": "1.550",
         "video": false
 
     },    
     {
         "image": "/video/vid4.mp4",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "avatar": "/images/avatars/avatar_profile_03.png",
+        "autor": "MauMaster",
+        "price": "5.14",
         "video": true
 
     },
     
     {
         "image": "/video/vid5.mp4",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "avatar": "/images/avatars/avatar_profile_05.png",
+        "autor": "SofiArt",
+        "price": "4.54",
         "video": true
 
     },
     {
         "image": "/images/trend/trending13.png",
-        "avatar": "/images/avatars/avatar_profile_02.png",
-        "autor": "User 001",
-        "price": "1350",
+        "avatar": "/images/avatars/avatar_profile_04.png",
+        "autor": "Satoshi",
+        "price": "1.30",
         "video": false
 
     }

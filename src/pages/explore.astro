@@ -4,66 +4,69 @@ import MarketSlider from "@components/react/AuctionCardSlide.jsx";
 import TrendTopSlider from "@components/react/TrendTopSlider.jsx";
 import TopCreators from "@components/TopCreators.astro";
 import WalletIcon from "@assets/icons/wallet.astro";
-import AddIcon from "@assets/icons/add.astro"
-import SellIcon from "@assets/icons/sell.astro"; 
+import AddIcon from "@assets/icons/add.astro";
+import SellIcon from "@assets/icons/sell.astro";
 ---
+
 <Layout title="Market">
 	<main class="main-slot">
 		<section class="market-container market-business-card" id="subasta">
-			<MarketSlider client:load path="/"/>
+			<MarketSlider client:load path="/login" />
 		</section>
 
-		<h1 class="txt-tittle" id="topCreators">Top <span class="text-gradient">Creators</span></h1>
-		<section class="market-container market-creators"> 
-			<TopCreators/> 
+		<h1 class="txt-tittle" id="topCreators">
+			Top <span class="text-gradient">Creators</span>
+		</h1>
+		<section class="market-container market-creators">
+			<TopCreators />
 		</section>
 
-		<h1 class="txt-tittle" id="topArt">Trending <span class="text-gradient">Top</span></h1>
+		<h1 class="txt-tittle" id="topArt">
+			Trending <span class="text-gradient">Top</span>
+		</h1>
 		<section class="market-container market-top-art">
-			<TrendTopSlider client:load/>
+			<TrendTopSlider client:load />
 		</section>
 
-		<h1 class="txt-tittle">Create <span class="text-gradient">and</span> Sell</h1>
+		<h1 class="txt-tittle">
+			Create <span class="text-gradient">and</span> Sell
+		</h1>
 		<section class="market-container market-info">
 			<section class="market-info-card">
 				<section class="market-info-card-icon">
-					<WalletIcon
-						size="45"
-						stroke="#fff"/>
+					<WalletIcon size="45" stroke="#fff" />
 				</section>
 				<section>
 					<h3>Set up your wallet</h3>
 					<p>
-						Once you've set up your wallet of choice, 
-						connect it to NFT marketplace by clicking is link.
+						Once you've set up your wallet of choice, connect it to
+						NFT marketplace by clicking is link.
 					</p>
 				</section>
 			</section>
 			<section class="market-info-card">
 				<section class="market-info-card-icon">
-					<AddIcon
-						size="45"
-						stroke="#fff"/>
+					<AddIcon size="45" stroke="#fff" />
 				</section>
 				<section>
 					<h3>Add your NFTs</h3>
 					<p>
 						Upload your work, add a title and description, and
-						customize your NFTs with properties, stat, and unlockable content.
+						customize your NFTs with properties, stat, and
+						unlockable content.
 					</p>
 				</section>
 			</section>
 			<section class="market-info-card">
 				<section class="market-info-card-icon">
-					<SellIcon
-						size="45"
-						stroke="#fff"/>
+					<SellIcon size="45" stroke="#fff" />
 				</section>
 				<section>
 					<h3>Sell your NFTs</h3>
 					<p>
-						Choose between auctions, fixed-price and declining-price listings.
-						You choose how you want to sell your NFTs, and we help you shell them!
+						Choose between auctions, fixed-price and declining-price
+						listings. You choose how you want to sell your NFTs, and
+						we help you shell them!
 					</p>
 				</section>
 			</section>
@@ -72,67 +75,74 @@ import SellIcon from "@assets/icons/sell.astro";
 </Layout>
 
 <style>
-	h1{
+	h1 {
 		font-size: 3.5em;
-		text-align: center;	
+		text-align: center;
 		margin-bottom: 1em;
 	}
-	.market-container{
+	.market-container {
 		width: 95%;
-		margin: 0 auto 5em; 
+		margin: 0 auto 5em;
 	}
 
-	.market-business-card{
+	.market-business-card {
 		width: 100%;
 		height: 500px;
 		color: #fff;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		position: relative;		
+		position: relative;
 	}
 
-	.market-business-card::before{
+	.market-business-card::before {
 		content: "";
 		width: 100%;
-		height: 40%;	
-		border-radius: 3em ;
+		height: 40%;
+		border-radius: 3em;
 		position: absolute;
 		filter: blur(15em);
-		transform: scale(.7);
-		background: linear-gradient(to left, var(--color-secondary), var(--color-primary));
+		transform: scale(0.7);
+		background: linear-gradient(
+			to left,
+			var(--color-secondary),
+			var(--color-primary)
+		);
 	}
 
-	.market-creators{
-		height: 500px;	
-		padding:2em ;
+	.market-creators {
+		height: 500px;
+		padding: 2em;
 		margin: 4em auto;
 		position: relative;
 		box-shadow: 0 0 50px black;
 		border-radius: 2em;
 	}
 
-	.market-creators::before{
+	.market-creators::before {
 		content: "";
 		width: 100%;
 		height: 100%;
-		border-radius: 3em ;
+		border-radius: 3em;
 		position: absolute;
 		filter: blur(20em);
-		transform: scale(.5);
-		background: linear-gradient(to left, var(--color-secondary), var(--color-primary));
-		
+		transform: scale(0.5);
+		background: linear-gradient(
+			to left,
+			var(--color-secondary),
+			var(--color-primary)
+		);
 	}
 
-	.market-top-art{
+	.market-top-art {
 		overflow: hidden;
 		filter: drop-shadow(0 0 50px black);
-		position: relative ; 
-		padding:2em 0;
+		position: relative;
+		padding: 2em 0;
 	}
-	.market-top-art::before{
+	.market-top-art::before {
 		content: "";
-		position:absolute ;
+		position: absolute;
 		top: 0;
 		left: 0;
 		width: 50%;
@@ -140,14 +150,14 @@ import SellIcon from "@assets/icons/sell.astro";
 		z-index: 10;
 	}
 
-	.market-info{
+	.market-info {
 		height: 300px;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 3em;
 	}
 
-	.market-info-card{
+	.market-info-card {
 		position: relative;
 		z-index: 10;
 		color: white;
@@ -155,27 +165,28 @@ import SellIcon from "@assets/icons/sell.astro";
 		box-shadow: 0 0 50px black;
 		border-radius: 2em;
 		padding: 3em;
-		transition: .5s;
+		transition: 0.5s;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: space-around;
-	}	
-	.market-info-card h3{
+	}
+	.market-info-card h3 {
 		font-weight: bold;
 		letter-spacing: 2px;
 	}
 
-	.market-info-card-icon{
+	.market-info-card-icon {
 		width: 60px;
 		height: 60px;
-		background: linear-gradient(to bottom right, #ff004c , #3b82f6 );
+		background: linear-gradient(to bottom right, #ff004c, #3b82f6);
 		border-radius: 1em;
-		display:grid;
-		place-items: center;	
+		display: grid;
+		place-items: center;
 	}
 
-	.market-info-card::after, .market-info-card::before{
+	.market-info-card::after,
+	.market-info-card::before {
 		content: "";
 		position: absolute;
 		width: 25%;
@@ -183,21 +194,20 @@ import SellIcon from "@assets/icons/sell.astro";
 		border-radius: 50%;
 		z-index: -1;
 		filter: blur(10em);
-		transform: scale(.7);
-		
+		transform: scale(0.7);
 	}
 
-	.market-info-card::after{
+	.market-info-card::after {
 		background: #ff004c;
 		top: 0;
 		left: 0;
 	}
-	.market-info-card::before{
+	.market-info-card::before {
 		background: #3b82f6;
 		bottom: 0;
 		right: 0;
 	}
-	.market-info-card:hover{	
-		transform:scale(1.1);
+	.market-info-card:hover {
+		transform: scale(1.1);
 	}
 </style>

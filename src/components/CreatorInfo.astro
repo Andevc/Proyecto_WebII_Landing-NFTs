@@ -3,10 +3,11 @@ interface Props {
 	Rank?: string;
     Avatar?: string;
     CreatorName?: string;
+    UserName?: string;
     TotalEarn?: string;
     NFTsSold?: string;
 }
-const { Rank,Avatar, CreatorName, TotalEarn, NFTsSold} = Astro.props;
+const { Rank,Avatar, CreatorName, UserName,TotalEarn, NFTsSold} = Astro.props;
 const colors = ['#73ff00','#e2e2e2','#1900ff','#dc143c']
 const BgAvatar = colors[Math.floor(Math.random()*(colors.length))]
 ---
@@ -20,6 +21,7 @@ const BgAvatar = colors[Math.floor(Math.random()*(colors.length))]
         </section>
         {CreatorName}
     </li>
+    <li class="UserName">{UserName}</li>
 
     <li class="Total-Earn">
         
@@ -65,7 +67,7 @@ const BgAvatar = colors[Math.floor(Math.random()*(colors.length))]
         place-content: center;
     }
     .Creator{   
-        width: 40%;
+        width: 30%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -82,8 +84,15 @@ const BgAvatar = colors[Math.floor(Math.random()*(colors.length))]
     .avatar img{
         filter: drop-shadow(2px 2px 2px black);
     }
+    .UserName{
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;        
+    }
     .Total-Earn{
-        width: 30%;
+        width: 20%;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;

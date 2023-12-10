@@ -7,7 +7,6 @@ import Support from '@assets/icons/support.astro';
 import Garantia from '@assets/icons/garantia.astro';
 import {Image} from 'astro:assets';
 import bgContainer from '@assets/images/patner/earstcg.png'
-import coins from '@assets/images/patner/ogrvmg2x-1024x926.png';
 import patner1 from '@assets/images/patner/abadar.png';
 import patner2 from '@assets/images/patner/breally.png';
 import patner3 from '@assets/images/patner/designStudio.png';
@@ -31,8 +30,8 @@ const pricing = [
             "Acceso al foro comunitario.",
         ],
         button: {
-            text: "Get Started",
-            link: "/",
+            text: "Comenzar",
+            link: "/login",
         },
         
     },
@@ -56,8 +55,8 @@ const pricing = [
             "Sesiones exclusivas de asesoramiento virtual."
         ],
         button: {
-            text: "Get Started",
-            link: "/",
+            text: "Comenzar",
+            link: "/login",
         },
         
     },
@@ -77,8 +76,8 @@ const pricing = [
             "articipación en sesiones exclusivas de feedback con el equipo de la plataforma.",
         ],
         button: {
-            text: "Contact us",
-            link: "/contact",
+            text: "Contactanos",
+            link: "/about",
         },
         
     },
@@ -94,13 +93,13 @@ const pricing = [
                     increíbles obras de arte criptográfico en [Nombre de tu Plataforma]!
                 </p>
                 <section class="w-1/2">
-                    <Button text="Empezar" href="/login" />
+                    <Button text="Acceder" href="/login" />
                 </section>
                 
             </section>
             <section class="pricing-container-main-img">
                 <Image src={bgContainer} class="img-bg" alt="image"/>
-                <Image src={coins} class="img-bg-2" alt="image"/>
+                
             </section>
         </section>
         <section class="pricing-container">
@@ -152,7 +151,7 @@ const pricing = [
 					<h3>Garantía de Autenticidad</h3>
 					<p>
 						Cada obra de arte viene con una garantía de autenticidad. 
-                        En [Nombre de tu Plataforma], nos comprometemos a ofrecer 
+                        En <strong>ARTopia</strong>, nos comprometemos a ofrecer 
                         obras genuinas y de alta calidad para que puedas disfrutar 
                         de tu inversión con total confianza.
 					</p>
@@ -163,10 +162,10 @@ const pricing = [
         <section class="pricing-container">
             <h1 class="txt-tittle text-gradient">El hogar mas confiable del arte criptografico</h1>
             <p class="txt-paragraph text-center">
-                Nuestra plataforma, ArtFlow, es intuitiva y potente para construir tu experiencia artística. 
+                Nuestra plataforma, ARTopia, es intuitiva y potente para construir tu experiencia artística. 
                 Cada detalle ha sido cuidadosamente diseñado para respaldar una inmersión única en el 
                 mundo del arte criptográfico a gran escala. Inicialmente concebida por nuestro equipo, 
-                hoy en día, ArtFlow se ha convertido en una red descentralizada respaldada y desarrollada 
+                hoy en día, ARTopia se ha convertido en una red descentralizada respaldada y desarrollada 
                 por una comunidad en constante crecimiento.
             </p>
             <section class="pricing-container-patners">

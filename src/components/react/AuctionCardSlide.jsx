@@ -66,10 +66,10 @@ export default function AuctionCards({path}){
                                 </section>
                                 <section class="slider-card-buttons">
                                     <section className='card-bnt-primary'>
-                                        <a href={path} >Place a bid</a>
+                                        <a href={path} >Subasta</a>
                                     </section>
                                     <section className='card-bnt-secondary'>
-                                        <a href={path} className='bg-[#313131] hover:bg-[#6e6e6e]'>View Artwork</a>
+                                        <a href={path} className='bg-[#313131] hover:bg-[#6e6e6e]'>Ver Mas</a>
                                     </section>
                                 </section>
                             </section>

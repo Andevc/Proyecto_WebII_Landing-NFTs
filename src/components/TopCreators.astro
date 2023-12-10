@@ -9,92 +9,51 @@ import CreatorInfo from "@components/CreatorInfo.astro";
             
             <ul class="table-tittle">
                 <li class="Rank" ></li>
-                <li class="Creator" >Creator Tag</li>
-                <li class="Total-Earn" >Total Earn</li>
-                <li class="NFTs-Sold" >NFTs Sold</li>
+                <li class="Creator" >Creador</li>
+                <li class="Username" >Usuario</li>
+                <li class="Total-Earn" >Total Ganado</li>
+                <li class="NFTs-Sold" >NFTs Vendidos</li>
             </ul>
             <section class="ranking">
                 <CreatorInfo
                     Rank="1"
-                    Avatar="/images/avatars/avatar_profile_01.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
+                    Avatar="/images/avatars/avatar_profile_02.png"
+                    CreatorName="Marco Garcia "
+                    UserName="MarcoExplo"
+                    TotalEarn="10500"
+                    NFTsSold="350"
                 />
                 <CreatorInfo
                     Rank="2"
-                    Avatar="/images/avatars/avatar_profile_02.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
+                    Avatar="/images/avatars/avatar_profile_05.png"
+                    CreatorName="Sofia martinez"
+                    UserName="SofiArt"
+                    TotalEarn="10250"
+                    NFTsSold="450"
                 />
                 <CreatorInfo
                     Rank="3"
-                    Avatar="/images/avatars/avatar_profile_03.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
+                    Avatar="/images/avatars/avatar_profile_04.png"
+                    CreatorName="Carlos Lopez"
+                    UserName="Satoshi"
+                    TotalEarn="9000"
+                    NFTsSold="400"
                 />
                 <CreatorInfo
                     Rank="4"
-                    Avatar="/images/avatars/avatar_profile_04.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
+                    Avatar="/images/avatars/avatar_profile_01.png"
+                    CreatorName="Elena Rodriguez"
+                    UserName="EtherQueen"
+                    TotalEarn="7500"
+                    NFTsSold="400"
                 />
                 <CreatorInfo
                     Rank="5"
-                    Avatar="/images/avatars/avatar_profile_05.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
-                />
-            </section>
-        </section>
-        
-        <section class="table-col">
-            <ul class="table-tittle">
-                <li class="Rank" ></li>
-                <li class="Creator" >Creator Tag</li>
-                <li class="Total-Earn" >Total Earn</li>
-                <li class="NFTs-Sold" >NFTs Sold</li>
-            </ul>
-            <section class="ranking">
-                <CreatorInfo
-                    Rank="6"
-                    Avatar="/images/avatars/avatar_profile_06.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
-                />
-                <CreatorInfo
-                    Rank="7"
-                    Avatar="/images/avatars/avatar_profile_07.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
-                />
-                <CreatorInfo
-                    Rank="8"
-                    Avatar="/images/avatars/avatar_profile_08.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
-                />
-                <CreatorInfo
-                    Rank="9"
-                    Avatar="/images/avatars/avatar_profile_09.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
-                />
-                <CreatorInfo
-                    Rank="10"
-                    Avatar="/images/avatars/avatar_profile_10.png"
-                    CreatorName="User001"
-                    TotalEarn="1350"
-                    NFTsSold="250"
-                    
+                    Avatar="/images/avatars/avatar_profile_03.png"
+                    CreatorName="Mauricio Perez"
+                    UserName="MauMaster"
+                    TotalEarn="6000"
+                    NFTsSold="350"
                 />
             </section>
         </section>
@@ -138,7 +97,7 @@ import CreatorInfo from "@components/CreatorInfo.astro";
     }
 
     .table-col{
-        width: 50%;
+        width: 100%;
         
         padding: 0 1.5em .5em .5em;
         overflow: hidden;
@@ -150,35 +109,39 @@ import CreatorInfo from "@components/CreatorInfo.astro";
 
 
     .table-tittle{
+        width: 100%;
         display: flex;
-        justify-content: center;
+        
         align-items: center;
+        gap: 3em;
         padding: 10px 0 0;
         border-bottom: 3px solid white;
         color: white;
         font-weight: bold;
         letter-spacing: 2px;
         margin-bottom: 1.5em;
+        
     }
 
     .table-tittle li{
-        
         height: 3em;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        
-
     }
 
     .Rank{
-        width: 10%;
+        width: 5%;
     }
     .Creator{
-        width: 40%;
+        width: 30%;
+    }
+    .UserName{
+        width: 15%;
+        margin-right: 1em;
     }
     .Total-Earn{
-        width: 30%;
+        width: 20%;
     }
     .NFTs-Sold{
         width: 20%;
