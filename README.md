@@ -26,7 +26,11 @@ Dentro del proyecto de Astro, estan las siguientes carpetas y archivos:
 │   └── styles/
 └── package.json
 ```
+-----
 
+### [Repositorio del Dashboard](https://github.com/Andevc/dashboard-cryptoArt)
+![dashboard](https://github.com/Andevc/dashboard-cryptoArt/blob/master/public/images/portada.png)
+-----
 Astro busca archivos con extensión `.astro` o `.md` en el directorio `src/pages/`. Cada página se expone como una ruta basada en el nombre de su archivo.
 
 No hay nada especial acerca de `src/components/`, pero es el lugar donde nos gusta poner componentes de Astro/React/Vue/Svelte/Preact.
